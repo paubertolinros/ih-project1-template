@@ -21,7 +21,7 @@ Minimum user stories:
 
 ## User stories Backlog
 
-- User can see at the moment if he has put the color rigth o wrong
+- User can see at the moment if he has put the color rigth o wrong.
 - User can chose between 2 o more artworks to play.
 
 ## File structure
