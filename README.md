@@ -1,21 +1,28 @@
-# Game name
+# Mondrian's Dream
 
 <!-- When you finish, add a nice screenshot of your game -->
 <!--[<img src="./img/page.png">]()-->
 
 ## Description
 
-Game's purpose and description
+ The game was born with the aim of bringing the world of art closer to the children, and what better way to do it than through their favorite language? the game! So, Mondrian's Dream is a small step for the little ones to have a first contact with one of the mythical works of this Dutch artist, Piet Mondrian.
 
 ## User stories MVP
 
 Minimum user stories:
 
-- User can ...
+- user can see a start screen with instructions and an end screen when he wins/ loses
+- user can see a drawing for 3 secs then it disappears
+- user can see the template of the drawing without the colors, just the grid
+- user can click on the square that he wants to paint and then on the colors
+- when user finishes user can click on a "finish" button that checks if the color pattern is correct
+- if color pattern is correct then user wins
+- if color pattern is incorrect user loses
 
 ## User stories Backlog
 
-- User can ...
+- User can see at the moment if he has put the color rigth o wrong
+- User can chose between 2 o more artworks to play.
 
 ## File structure
 
