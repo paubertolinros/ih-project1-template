@@ -19,7 +19,7 @@ window.onload = function () {
     elem.onclick = ()=> {
     startPage.style = "display: flex"
     winPage.style = "display: none";
-    losePage.style = "display: none"
+    losePage.style = "display: none";
   }
   })
   console.log(backMenuButton)
