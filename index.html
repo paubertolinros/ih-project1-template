@@ -19,25 +19,56 @@
 
   <div id="artwork-page" class="hidden">
     <main>
-      <h1>Això estarà 3 segons</h1>
+      <h3> <span id="seconds">0</span> Seconds</h3>
+      <img src="img/Composition II in Red, Blue and Yellow - Mondrian.jpeg" alt="Composition II in Red, Blue and Yellow Artwork">
     </main>
   </div>
 
   <div id="game-page" class="hidden">
     <main>
       <h1>Això és la pàgina del joc</h1>
+        <div class="grid">
+          <div class="a">a</div>
+          <div class="b">b</div>
+          <div class="c">c</div>
+          <div class="d">d</div>
+          <div class="e">e</div>
+          <div class="f">f</div>
+          <div class="g">g</div>
+        </div>
+        <div class="palette-colors">
+          <button class="blue">Blue</button>
+          <button class="red">Red</button>
+          <button class="yellow">Yellow</button>
+          <button class="white">White</button>
+          <button class="Grey">Grey</button>
+          <button class="black">Black</button>
+        </div>
+        <div class="finish-button">
+          <button id="check-button"> I'm done! </button>
+        </div>
     </main>
   </div>
 
   <div id="lose-page">
     <main>
-      <h1>YOU LOSE SUCKER</h1>
+      <h1>TRY AGAIN!</h1>
+      <div>
+        <button class="menu-button"> Back to menu! </button>
+      </div>
+    </main>
+  </div>
+  <div id="win-page">
+    <main>
+      <h1>YOU WIN!</h1>
+      <div>
+        <button class="menu-button"> Back to menu! </button>
+      </div>
     </main>
   </div>
 
-  <canvas id="canvas" width="1000" height="600" class="hidden"></canvas>
-
   <script src="js/game.js"></script>
+  <script src="js/painting.js"></script>
   <script src="js/scripts.js"></script>
 </body>
 </html>

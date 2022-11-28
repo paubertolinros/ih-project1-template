@@ -3,7 +3,7 @@
   padding: 0;
 }
 
-/* Basic styles, change according to your style */
+/*-----------Basic styles, change according to your style-----------*/
 
 #start-page,
 #lose-page {
@@ -23,15 +23,11 @@
   display: none;
 }
 
-canvas {
-  border: 1px solid black;
-  display: block;
-  margin: 0 auto;
-  margin-top: 30px;
-  margin-bottom: 50px;
+#win-page {
+  display: none;
 }
 
-/* Auxiliar classes */
+/*-----------Auxiliar classes-----------*/
 
 .hidden {
   display: none;
@@ -39,4 +35,106 @@ canvas {
 
 .shown {
   display: flex;
+}
+
+/*-----------Grid-----------*/
+.grid {
+  width: 600px;
+  height: 600px;
+  display: grid;
+  grid-template-rows: 170px 210px 64px 64px;
+  grid-template-columns: 124px 376px 60px;
+  grid-gap: 30px 20px;
+  background-color: black;
+  }
+
+.grid > div {
+  border: 1px solid black;/*amb o sense marge*/
+  background-color: white;
+  font-size: 2rem;
+  font-family: Arial, sans-serif; 
+}
+
+.grid div.a {
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+
+.grid div.b {
+  grid-row: 2/3;
+  grid-column: 1/2;
+}
+
+.grid div.c {
+  grid-row: 1/3;
+  grid-column: 2/4;
+  background-color: #DE271D;
+}
+
+.grid div.d {
+  grid-row: 3/5;
+  grid-column: 1/2;
+  background-color: #015CA0;
+  color: white;
+}
+
+.grid div.e {
+  grid-row: 3/5;
+  grid-column: 2/3;
+}
+
+.grid div.f {
+  grid-row: 3/4;
+  grid-column: 3/4;
+}
+
+.grid div.g {
+  grid-row: 4/5;
+  grid-column: 3/4;
+  background-color: #ECDB6B;
+}
+
+.grid div.d {
+	grid-row: 3/5;
+	grid-column: 1/2;
+	background-color: #015CA0;
+	color: white;
+}
+.grid div.e {
+	grid-row: 3/5;
+	grid-column: 2/3;
+}
+.grid div.f {
+	grid-row: 3/4;
+	grid-column: 3/4;
+}
+.grid div.g {
+	grid-row: 4/5;
+	grid-column: 3/4;
+	background-color: #ECDB6B;
+}
+
+/*-----------Color-buttons-----------*/
+
+.palette-colors .blue {
+  background-color: #015CA0;
+}
+
+.palette-colors .red {
+  background-color: #DE271D
+}
+.palette-colors .yellow {
+  background-color: #ECDB6B
+}
+.palette-colors .white {
+  background-color: #ffffff
+}
+
+.palette-colors .grey {
+  background-color: #aaaaaa
+}
+
+.palette-colors .black {
+  background-color: #000;
+  color: white
 }

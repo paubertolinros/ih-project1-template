@@ -1,9 +1,20 @@
 class Game{
-  constructor() {
+  constructor(squares) {
+    this.squares = squares;
+    this.pickedSquare = [];
+    this.pickedColors = [];
+    this.paintSquares = [];
+  }
+  
+// Per comprovar si s'han acertat els colors
+  _compareSquares() {
     
   }
 
+  // Si guanya es mostra una pàgina, si perd una altra
+  _lastPage() {
 
+  }
 
   _update() {
   
@@ -13,4 +24,5 @@ class Game{
     
     this._update(); //igual després la necessito
   }
+
 }
