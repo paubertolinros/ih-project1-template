@@ -1,6 +1,6 @@
 class Game{
-  constructor(squares) {
-    this.squares = squares;
+  constructor(grid) {
+    this.grid = grid;
     this.pickedSquare = [];
     this.pickedColors = [];
     this.paintSquares = [];
@@ -8,7 +8,7 @@ class Game{
   
 // Per comprovar si s'han acertat els colors
   _compareSquares() {
-    
+
   }
 
   // Si guanya es mostra una pàgina, si perd una altra
