@@ -1,3 +1,22 @@
+const colors = [
+  basicArtwok = [
+    { color: "red" },
+    { color: "blue" },
+    { color: "yellow" },
+    { color: "black" },
+    { color: "white"}
+  ],
+  intermediateArtwok = [
+    { color: "red" },
+    { color: "blue" },
+    { color: "yellow" },
+    { color: "black" },
+    { color: "white" },
+    { color: "grey"}
+  ]
+]
+const squares = 0;
+
 window.onload = function () {
   const game = new Game(/*squares*/);//si poso squares no em funciona, em diu que no està definit
   const paintingColors = new PaintingColors(colors);
