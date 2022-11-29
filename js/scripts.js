@@ -1,44 +1,23 @@
-const colors = [
-  basicArtwok = [
-    { name: "red" },
-    { name: "blue" },
-    { name: "yellow" },
-    { name: "black" },
-    { name: "white"}
-  ],
-  intermediateArtwok = [
-    { name: "red" },
-    { name: "blue" },
-    { name: "yellow" },
-    { name: "black" },
+const colors =[
     { name: "white" },
-    { name: "grey"}
-  ]
+    { name: "white" },
+    { name: "blue" },
+    { name: "red" },
+    { name: "white" },
+    { name: "white" },
+    { name: "yellow" }
 ]
-
-let realArtwork = `
-    <div class="real-grid">
-      <div class="a white">a</div>
-      <div class="b white">b</div>
-      <div class="c red">c</div>
-      <div class="d blue">d</div>
-      <div class="e white">e</div>
-      <div class="f white">f</div>
-      <div class="g yellow">g</div>
-    </div>
-    `
-    console.log(realArtwork)
 //!!!!!!!!!!!! per cadascun dels quadres posar un html (exemple cards)
 //Variable per HTML de l'obra d'art. En el cas que fos un Array d'objectes podria afegir més obres?
 let gridAnColors = `
     <div class="grid">
-      <div class="a white">a</div>
-      <div class="b white">b</div>
-      <div class="c red">c</div>
-      <div class="d blue">d</div>
-      <div class="e white">e</div>
-      <div class="f white">f</div>
-      <div class="g yellow">g</div>
+      <div class="a">a</div>
+      <div class="b">b</div>
+      <div class="c">c</div>
+      <div class="d">d</div>
+      <div class="e">e</div>
+      <div class="f">f</div>
+      <div class="g">g</div>
     </div>
     `
     console.log(gridAnColors)
@@ -59,17 +38,25 @@ const game = new Game(gridAnColors);
 const paintingColors = new PaintingColors(colorsForPaint);
 // això és el mateix que posar window.addEventListener("load", (event) => {})
 window.onload = function () {
+  const realArtworkPage = document.getElementById('real-Artwork');
   const startPage = document.getElementById('start-page');
   const startButton = document.getElementById('start');
   const artWorkPage = document.getElementById('artwork-page');
   const gamePage = document.getElementById('game-page');
   const losePage = document.getElementById('lose-page');
   const winPage = document.getElementById('win-page');
-
-   //gamePage.style = "display: flex"//només per poder treballar en la pàgina del joc
+  const getSeconds = document.getElementById('seconds');
+  realArtworkPage.style = "display: none";
+  //gamePage.style = "display: flex"//només per poder treballar en la pàgina del joc
   startButton.onclick = function () {
     artWorkPage.style = "display: flex";
     startPage.style = "display: none";
+    realArtworkPage.style = "display: none";
+    setInterval(() => {
+      game._restSeconds();
+      let restSeconds = game.seconds
+      getSeconds.innerHTML = restSeconds;
+    }, 1000)
     setTimeout(() => {
       artWorkPage.style = "display: none";
       gamePage.style = "display: flex";
@@ -92,23 +79,27 @@ window.onload = function () {
     elem.addEventListener("click", () => {
       console.log(`${elem.classList[0]} color button clicked!`)
       game.pickedColors.push(elem.classList[0])
-    //hauria d'agafar la class que és el color, push a l'array pickedColors i després quan fa click al quadre agafa el color de l'array i el posa al background del quadrat  
-   //let getColorClass = getButtonColors.className//.forEach((elem) => elem.classList)//!!!!!!!!!!!!!!!!!!!!
-      //console.log(getColorClass)   
+      game.pickedColorClass.push(elem.classList[1])
+    //hauria d'agafar la class que és el color en #, push a l'array pickedColors i després quan 
+    //fa click al quadre agafa el color de l'array i el posa al background del quadrat
+    //També agafa la segona classe del botó, que és el color en format "nom" red, blue...
     });
   });
 
-  // cada quadrat és clicable i he guardat al paràmetre els squares del html, però això només em permetrà jugar amb aquest quadre...
-  const geometricForms = document.querySelectorAll('.grid div')
-  console.log(geometricForms)
-  geometricForms.forEach((elem) => {
+  // cada quadrat és clicable 
+  const myArtWork = document.querySelectorAll('.grid div')
+  console.log(myArtWork)
+  myArtWork.forEach((elem) => {
     //Crec que se m'està anant l'olla, vaig a desconnectar 
     elem.addEventListener("click", () => {
       console.log(`${elem.className} square clicked!`)
-      let getcolor = game.pickedColors[0]
+      let getcolor = game.pickedColors[0];
+      let getClass = game.pickedColorClass[0];
       console.log(`${getcolor} is fantastic!`)
-      elem.style.background = `${getcolor}`
+      elem.style.background = `${getcolor}`;
+      elem.classList.add(`${getClass}`)
       game.pickedColors = [];
+      game.pickedColorClass = [];
     });
   });
   
@@ -123,15 +114,34 @@ window.onload = function () {
       losePage.style = "display: none";
     }
   });
- 
   //depenent de si guanya o perd s'ha de mostrar una de les dues pàgines, ara està la de guanyar
   finishButton.onclick = function () {
-    const getArtWorkCompare = document.querySelectorAll(".grid div")
-    getArtWorkCompare.forEach((elem) => {
-     _compareSquares(elem.style) === (elem.style)
-    })
     gamePage.style = "display: none";
     winPage.style = "display: flex";
     losePage.style = "display: none"
-  }
+
+    //quan vull cridar la funció del game.js no la reconeix
+    //No sé com comparar-ho!
+    for (let i = 0; i < getColorsRealArtwork.length; i++ ){
+      if (getColorsRealArtwork[i] == myArtWork.className[i+1]) {
+          console.log("hola!")
+        }
+    }
+    // compareSquares(myArtWork){
+    //   for (let i = 0; i < getColorsRealArtwork.length; i++) {
+
+    //   }
+    // }
+  }  
+
+  // estic intentant accedir al CSS per agafar el color i comparar-lo amb el artWork final
+  // getMyArtWork.forEach((elem) => {
+  //   console.log(elem)
+  //   let getStyles = getComputedStyle(elem)
+  //   console.log(getStyles)
+    // for (let styles in getStyles) {
+    //   styles.style.backgroundColor
+    // }
+     //game._compareSquares(elem.style) === (elem.style)
+    //})
 }
