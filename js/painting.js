@@ -1,10 +1,7 @@
 class PaintingColors{
-  constructor(colors) {
-    this.colors = colors;
+  constructor(painting, rightAnswers) {
+    this.baseHTML = painting;
     this.howManyColors = [];
   }
 
-  _removeAddColors() {
-    //if this.squares.length > 7 ensenya tots els colors, sinó tots menys el negre i el grey
-  }
 }
