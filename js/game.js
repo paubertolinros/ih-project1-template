@@ -1,5 +1,6 @@
 class Game{
-  constructor() {
+  constructor(artWork) {
+    this.artWork = artWork;
     this.pickedColorClass = [];
     this.pickedColors = [];
     this.maxAteempts = 10;
@@ -17,7 +18,7 @@ class Game{
     this.seconds = 3;
   }
 
-  start() {
+  printArtWorkAndColors() {
    // Carregar obra d'art al HTML
   //const newArtWork = document.querySelector(".art-work")
   newArtWork.innerHTML = gridAnColorsOne;
@@ -25,6 +26,7 @@ class Game{
   //const newColorsPalette = document.querySelector(".paint-colors")
   newColorsPalette.innerHTML = colorsForPaint;
    // this._update(); //igual després la necessito
+  
   };
 
   compareArtWorks() {
@@ -43,9 +45,9 @@ class Game{
     }
   }
   cleanAll() {
-    const game = new Game();
+    this.userAnswer = [];
+    const game = new Game(painting1);
     newArtWork.innerHTML = gridAnColorsOne;
-   // this.userAnswer = [];
  }
 
 }

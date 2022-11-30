@@ -50,4 +50,4 @@ const finishButton = document.getElementById('check-button');
 let artWorkpicture = 0;
 
 const newArtWork = document.querySelector(".art-work")
- const newColorsPalette = document.querySelector(".paint-colors")
+const newColorsPalette = document.querySelector(".paint-colors")
