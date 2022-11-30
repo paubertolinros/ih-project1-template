@@ -60,8 +60,7 @@ window.onload = function () {
       startPage.style = "display: flex"
       winPage.style = "display: none";
       losePage.style = "display: none";
-      game.cleanAll();//no em funciona els quadrats del grid
-      console.log("hola")
+      game.cleanAll();
     }
   });
   //depenent de si guanya o perd s'ha de mostrar una de les dues pàgines, ara està la de guanyar

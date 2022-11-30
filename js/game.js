@@ -46,7 +46,7 @@ class Game{
   }
   cleanAll() {
     this.userAnswer = [];
-    const game = new Game(painting1);
+    //const game = new Game(painting1);
     newArtWork.innerHTML = gridAnColorsOne;
  }
 
