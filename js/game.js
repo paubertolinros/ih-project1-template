@@ -28,7 +28,7 @@ class Game{
   //const newColorsPalette = document.querySelector(".paint-colors")
     newColorsPalette.innerHTML = colorsForPaint;
    // this._update(); //igual després la necessito
-    console.log(gridAnColorsOne);
+    console.log(gridAndColorsOne);
     console.log(colorsForPaint);
   
   };
@@ -53,7 +53,7 @@ class Game{
   cleanAll() {
     this.userAnswer = [];
     //const game = new Game(painting1);
-    newArtWork.innerHTML = gridAnColorsOne;
+    this.printArtWorkAndColors();
  }
 
 }
