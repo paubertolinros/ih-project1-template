@@ -2,7 +2,7 @@
 
 // això és el mateix que posar window.addEventListener("load", (event) => {})
 window.onload = function () {
-  const game = new Game(painting1);
+  const game = new Game(gridAnColorsOne, painting1);
   //gamePage.style = "display: flex"//només per poder treballar en la pàgina del joc
   startButton.onclick = function () { 
     artWorkPage.style = "display: flex";
@@ -17,12 +17,15 @@ window.onload = function () {
       game._stopSeconds();
       getSeconds.innerHTML = game.seconds;
     }, 3000);
-    renderEverything();  
+    game.printArtWorkAndColors();
+    renderEverything(game);  
   }
-  game.printArtWorkAndColors();
+  
  //Si crido la funció adalt, no em funciona la funció de pintar els quadrats
+//game.printArtWorkAndColors();
 
- function colorButtons(){
+
+ function colorButtons(game){
   // cada color és clicable
     document.querySelectorAll(".palette-colors button").forEach((elem) => {
       elem.addEventListener("click", () => {
@@ -36,7 +39,7 @@ window.onload = function () {
     });
   };
 
-  function changeSquareColor () {
+  function changeSquareColor (game) {
   // cada quadrat és clicable 
     document.querySelectorAll('.grid div').forEach((elem) => {
       //Crec que se m'està anant l'olla, vaig a desconnectar 
@@ -73,12 +76,19 @@ window.onload = function () {
     game.userAnswer.push(document.getElementById("f").classList.value);
     game.userAnswer.push(document.getElementById("g").classList.value);
     gamePage.style = "display: none";
-    game.compareArtWorks();
+    const result = game.compareArtWorks();
+    // Si ha guanyat crear un nou joc.
+    // if(result){
+      //  new Game(quadre2, resultat2);
+    //}else {
+        // Si ha perdut, tornar a repetir.
+
+   // }
   }  
 
-  function renderEverything() {
-    changeSquareColor();
-    colorButtons();
+  function renderEverything(game) {
+    changeSquareColor(game);
+    colorButtons(game);
   }
   
 }

@@ -1,6 +1,7 @@
 class Game{
-  constructor(artWork) {
-    this.artWork = artWork;
+  constructor(gridAnColorsOptions, rigthResult) {
+    this.gridAnColorsOptions = gridAnColorsOptions;
+    this.rigthResult = rigthResult;
     this.pickedColorClass = [];
     this.pickedColors = [];
     this.maxAteempts = 10;
@@ -19,18 +20,21 @@ class Game{
   }
 
   printArtWorkAndColors() {
+    console.log("call print art work and colorss");
    // Carregar obra d'art al HTML
   //const newArtWork = document.querySelector(".art-work")
-  newArtWork.innerHTML = gridAnColorsOne;
+    newArtWork.innerHTML = this.gridAnColorsOptions;
   // Carregar colors al HTML 
   //const newColorsPalette = document.querySelector(".paint-colors")
-  newColorsPalette.innerHTML = colorsForPaint;
+    newColorsPalette.innerHTML = colorsForPaint;
    // this._update(); //igual després la necessito
+    console.log(gridAnColorsOne);
+    console.log(colorsForPaint);
   
   };
 
   compareArtWorks() {
-    let getRealResult =  Object.values(painting1)
+    let getRealResult =  Object.values(this.rigthResult)
     for (let i = 0; i < getRealResult.length; i++){
       if (this.userAnswer[i] === getRealResult[i]) {
         console.log("You win!:)")
@@ -43,6 +47,8 @@ class Game{
         break;
       }
     }
+    // Tornar variable si s'ha guanyat o perdut 
+    // return isWin; 
   }
   cleanAll() {
     this.userAnswer = [];

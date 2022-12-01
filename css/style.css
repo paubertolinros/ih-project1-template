@@ -2,10 +2,54 @@
   margin: 0;
   padding: 0;
 }
+html {
+  width: 100vw;
+  height: 100vh;
+}
 
 /*-----------Basic styles, change according to your style-----------*/
+/*-----------Start Page-----------*/
+#start-page {
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-image: url(../img/background.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+#start-page main {
+  padding-top: 10rem
+}
+#start-page main h1 {
+  font-size: 6rem;
+  width: 60rem;
+}
+#start-page main div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10rem;
+}
+#start-page main p.ins {
+  font-size: 2rem;
+  color: #fff;
+}
+#start-page main p.des {
+  font-size: 2rem;
+  color: #fff;
+}
+#start-page main button {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid black;
+  border-radius: 0.3rem;
+  padding: 0.8rem 1rem;
+  width: 9rem;
+  margin-top: 15rem
+}
 
-#start-page,
 #lose-page {
   height: 600px;
   width: 1000px;
@@ -98,18 +142,18 @@
   background-color: #ffffff;
 }
 
-/*-----------Grid to Compare-----------*/
-.real-grid {
+/*-----------Grid2 to Play-----------*/
+.grid2 {
   width: 600px;
   height: 600px;
   display: grid;
   grid-template-rows: 170px 210px 64px 64px;
-  grid-template-columns: 124px 376px 60px;
+  grid-template-columns: 124px 376px 60px 60px 60px 60px;
   grid-gap: 30px 20px;
   background-color: black;
 }
 
-.real-grid > div {
+.grid2>div {
   border: 1px solid black;
   /*amb o sense marge*/
   background-color: white;
@@ -117,48 +161,109 @@
   font-family: Arial, sans-serif;
 }
 
-.real-grid div.a.white {
+.grid2 div#a2 {
   grid-row: 1/2;
   grid-column: 1/2;
   background-color: #ffffff
 }
 
-.real-grid div.b.white {
+.grid2 div#b2 {
   grid-row: 2/3;
   grid-column: 1/2;
   background-color: #ffffff
 }
 
-.real-grid div.c.red {
+.grid2 div#c2 {
   grid-row: 1/3;
   grid-column: 2/4;
-  background-color: #DE271D;
+  background-color: #ffffff;
 }
 
-.real-grid div.d.blue {
+.grid2 div#d2 {
   grid-row: 3/5;
   grid-column: 1/2;
-  background-color: #015CA0;
+  background-color: #ffffff;
   color: white;
 }
 
-.real-grid div.e.white {
+.grid2 div#e2 {
   grid-row: 3/5;
   grid-column: 2/3;
   background-color: #ffffff
 }
 
-.real-grid div.f.white {
+.grid2 div#f2 {
   grid-row: 3/4;
   grid-column: 3/4;
   background-color: #ffffff
 }
 
-.real-grid div.g.yellow {
+.grid2 div#g2 {
   grid-row: 4/5;
   grid-column: 3/4;
-  background-color: #ECDB6B;
+  background-color: #ffffff;
 }
+.grid2 div#h2 {
+  grid-row: 4/5;
+  grid-column: 3/4;
+  background-color: #ffffff;
+}
+.grid2 div#i2 {
+  grid-row: 4/5;
+  grid-column: 3/4;
+  background-color: #ffffff;
+}
+.grid2 div#j2 {
+  grid-row: 4/5;
+  grid-column: 3/4;
+  background-color: #ffffff;
+}
+.grid2 div#k2 {
+  grid-row: 4/5;
+  grid-column: 3/4;
+  background-color: #ffffff;
+}
+.grid2 div#l2 {
+  grid-row: 4/5;
+  grid-column: 3/4;
+  background-color: #ffffff;
+}
+.grid2 div#m2 {
+  grid-row: 4/5;
+  grid-column: 3/4;
+  background-color: #ffffff;
+}
+.grid2 div#n2 {
+  grid-row: 4/5;
+  grid-column: 3/4;
+  background-color: #ffffff;
+}
+.grid2 div#o2 {
+  grid-row: 4/5;
+  grid-column: 3/4;
+  background-color: #ffffff;
+}
+.grid2 div#p2 {
+  grid-row: 4/5;
+  grid-column: 3/4;
+  background-color: #ffffff;
+}
+.grid2 div#q2 {
+  grid-row: 4/5;
+  grid-column: 3/4;
+  background-color: #ffffff;
+}
+.grid2 div#r2 {
+  grid-row: 4/5;
+  grid-column: 3/4;
+  background-color: #ffffff;
+}
+.grid2 div#s2 {
+  grid-row: 4/5;
+  grid-column: 3/4;
+  background-color: #ffffff;
+}
+
 
 
 /*-----------Color-buttons-----------*/

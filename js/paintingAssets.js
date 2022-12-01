@@ -12,6 +12,13 @@ let gridAnColorsOne = `
     <div id="g" class = "white">g</div>
   </div>
   `
+
+let gridAnColorsTwo = `
+  <div class="grid">
+    <div id="a" class = "white">a</div>
+    <div id="b" class = "white">b</div>
+  </div>
+  `
 //Paint colors
 let colorsForPaint = ` 
   <div class="palette-colors">
