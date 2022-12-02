@@ -2,10 +2,13 @@
 
 // això és el mateix que posar window.addEventListener("load", (event) => {})
 window.onload = function () {
-  let game = new Game(gridAndColorsOne, painting1Solution);
+  
   //gamePage.style = "display: flex"//només per poder treballar en la pàgina del joc
-  startButton.onclick = startGame;
-    function startGame() { 
+
+  function startGame(grid, solutions,level,image) { 
+    let game = new Game(grid,solutions,level,image);
+    console.log('Starting', game)
+    game.printArtWorkImage();
     artWorkPage.style = "display: flex";
     startPage.style = "display: none";
     game.intervalId = setInterval(() => {
@@ -17,10 +20,14 @@ window.onload = function () {
       gamePage.style = "display: flex";
       game._stopSeconds();
       getSeconds.innerHTML = game.seconds;
-    }, 3000);
+    }, 7000);
     game.printArtWorkAndColors();
     renderEverything(game);  
   }
+
+  startButton.onclick = () => {
+    startGame(gridAndColorsOne, painting1Solution, 1, "../img/Composition II in Red, Blue and Yellow - Mondrian.jpeg" )
+  };
   
  //Si crido la funció adalt, no em funciona la funció de pintar els quadrats
 //game.printArtWorkAndColors();
@@ -41,9 +48,12 @@ window.onload = function () {
   };
 
   function changeSquareColor(game) {
+    console.log("quadrats1")
   // cada quadrat és clicable 
-    document.querySelectorAll('.grid div').forEach((elem) => {
+   //cosi ale const div = docu('.grid1 div').forEach((elem) => {
+  document.querySelectorAll(`.grid${game.level} div`).forEach((elem) => {
       //Crec que se m'està anant l'olla, vaig a desconnectar 
+    console.log("quadrats2")
       elem.addEventListener("click", () => {
         console.log(`${elem.id} square clicked!`)
         let getcolor = game.pickedColors[0];
@@ -58,52 +68,56 @@ window.onload = function () {
   };
 //variable per poder accedir al resultat a la function next Level
 let resultCompareArtWorks = null;
-  function readyToCompare(game) {
+  function readyToCompare(game,level) {
     winPage.style = "display: none";
     losePage.style = "display: none";
     //depenent de si guanya o perd s'ha de mostrar una de les dues pàgines, ara està la de guanyar
     finishButton.onclick = function () {
-      game.userAnswer.push(document.getElementById("a").classList.value);
-      game.userAnswer.push(document.getElementById("b").classList.value);
-      game.userAnswer.push(document.getElementById("c").classList.value);
-      game.userAnswer.push(document.getElementById("d").classList.value);
-      game.userAnswer.push(document.getElementById("e").classList.value);
-      game.userAnswer.push(document.getElementById("f").classList.value);
-      game.userAnswer.push(document.getElementById("g").classList.value);
+      let rigthResultLength = Object.keys(game.rigthResult);
+      console.log(rigthResultLength)
+      for (let i = 0; i < rigthResultLength.length; i++){
+        console.log(`a${i}`)
+        let userAswerFirst = document.getElementById(`a${i}`)
+        console.log(userAswerFirst)
+       game.userAnswer.push(userAswerFirst.classList.value); 
+      }
+      
+      /*game.userAnswer.push(document.getElementById("a0").classList.value);
+      game.userAnswer.push(document.getElementById("a1").classList.value);
+      game.userAnswer.push(document.getElementById("a2").classList.value);
+      game.userAnswer.push(document.getElementById("a3").classList.value);
+      game.userAnswer.push(document.getElementById("a4").classList.value);
+      game.userAnswer.push(document.getElementById("a5").classList.value);
+      game.userAnswer.push(document.getElementById("a6").classList.value);*/
       gamePage.style = "display: none";
       // intento guardar el resultat de comparar l'obra d'art i 
       resultCompareArtWorks = game.compareArtWorks();
-      // console.log(resultCompareArtWorks) 
+      console.log(resultCompareArtWorks) 
     }
   }
  //console.log(resultCompareArtWorks) 
 //Per posar el següent nivell en el cas que guanyi, no funciona
+  // function nextLevel(game) {
+  //   if (resultCompareArtWorks) {
+  //     console.log("joc2")
+  //     game = new Game(gridAndColorsTwo, painting2Solution)
+  //   } if (!resultCompareArtWorks) {
+  //     console.log("joc1")
+  //     game = new Game(gridAndColorsOne, painting1Solution)
+  //   }
+  // }
   function nextLevel(game) {
-    if (resultCompareArtWorks) {
-      console.log("joc2")
-      return game = new Game(gridAndColorsTwo, painting2Solution)
-    } if (!resultCompareArtWorks) {
-      console.log("joc1")
-      return game = new Game(gridAndColorsOne, painting1Solution)
+    const nextLevelButton = document.querySelector('.next-level-button')
+    if (game.level === 2) {
+     nextLevelButton.setAttribute('disabled', '')
+    } 
+    nextLevelButton.onclick = () => {
+    if(game.level === 1) {
+    startGame(gridAndColorsTwo, painting2Solution, 2, "../img/Composition in Red, Yellow, blue and black - Mondrian.jpg")
+      } 
+      }
     }
-  }
-  const nextLevelButton = document.querySelector('.next-level-button')
-  nextLevelButton.onclick = () => {
-    nextLevel();
-    console.log("next level!")
-    game.cleanAll();
-    startGame(); 
-  }
-   // Si ha guanyat crear un nou joc.
-    // if(result){
-      //  new Game(quadre2, resultat2);
-    //}else {
-        // Si ha perdut, tornar a repetir.
-
-   // }
-  //}
-   
-
+function backToMenu (game) {
   // cada botó última pàgina (guanyar/perdre) et porta a la pàgina d'inici
   const backMenuButton = document.querySelectorAll('.menu-button').forEach((elem) => {
     elem.onclick = () => {
@@ -113,18 +127,30 @@ let resultCompareArtWorks = null;
       game.cleanAll();
     }
   });
+  };
 //botó per quan perds poder tornar a intentar-ho, no em funciona la funció
   //de comparar
-  const tryAgain = document.querySelector('.try-again-button');
-  tryAgain.onclick = function () {
-    game.cleanAll();
-    startGame();
+  function tryAgainButton(game, level) {
+    const tryAgain = document.querySelector('.try-again-button');
+    tryAgain.onclick = function () {
+      console.log("try again")
+      if (game.level === 1) {
+      startGame(gridAndColorsOne, painting1Solution, 1,"../img/Composition II in Red, Blue and Yellow - Mondrian.jpeg")
+      } if (game.level === 2) {
+        startGame(gridAndColorsTwo, painting2Solution, 2, "../img/Composition in Red, Yellow, blue and black - Mondrian.jpg")
+      }
+      }
+      
   }
 
-  function renderEverything(game) {
+  function renderEverything(game, level) {
+    console.log("rendering")
     changeSquareColor(game);
-    colorButtons(game);
-    readyToCompare(game);
+    colorButtons(game, level);
+    readyToCompare(game, level);
+    tryAgainButton(game, level);
+    nextLevel(game);
+    backToMenu(game);
   }
   
 }

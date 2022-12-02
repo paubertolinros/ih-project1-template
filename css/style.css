@@ -8,6 +8,11 @@ html {
   height: 100vh;
 }
 
+body, button {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+}
+
 /*-----------Basic styles, change according to your style-----------*/
 /*-----------Start Page-----------*/
 #start-page {
@@ -17,40 +22,103 @@ html {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  background-image: url(../img/background.jpeg);
-  background-position: center center;
+  background-image: url(../img/background-b.jpeg);
+  background-position: bottom center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 #start-page main {
-  padding-top: 10rem
+  padding-top: 5rem
 }
 #start-page main h1 {
+  font-family: 'Cedarville Cursive', cursive;
   font-size: 6rem;
-  width: 60rem;
 }
-#start-page main div {
+#start-page main div.ins-and-desc {
   display: flex;
   justify-content: space-between;
-  margin-top: 10rem;
+  margin-top: 8.5rem;
+  gap: 40rem;
 }
-#start-page main p.ins {
-  font-size: 2rem;
-  color: #fff;
+#start-page main div.ins-and-desc div.instructions {
+  display: flex;
+  justify-content: center;
+  background-color: #DE271D;
+  width: 10rem;
+  height: 12.5rem;
+  transition-property: width;
+  transition-delay: 1s;
+  transition-duration: .5s;
+  transition-timing-function: ease-in;
+  cursor: pointer
 }
-#start-page main p.des {
-  font-size: 2rem;
+#start-page main div.ins-and-desc div.instructions:hover {
+  width: 15rem;  
+}
+
+#start-page main div.ins-and-desc div.description {
+  display: flex;
+  justify-content: center;
+  background-color: #ECDB6B;
+  width: 10rem;
+  height: 12.5rem;
+  margin-top: 0.2rem;
+}
+#start-page main div.ins-and-desc div.instructions p.ins {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  color: #fff; 
+}
+#start-page main div.ins-and-desc div.description p.des {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
   color: #fff;
 }
 #start-page main button {
-  background-color: #000;
+  background-color: rgb(23, 72, 163);
   color: #fff;
   border: 1px solid black;
-  border-radius: 0.3rem;
-  padding: 0.8rem 1rem;
-  width: 9rem;
-  margin-top: 15rem
+  padding: 1.5rem 0.9rem;
+  margin-top: 2.1rem;
 }
 
+/*-----------Artwork Seconds-----------*/
+#artwork-page {
+  justify-content: center;
+}
+
+.artwork-page-seconds {
+  display: flex;
+  justify-content: center;
+}
+
+.artwork-page-seconds main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.artwork-page-seconds h3{
+  font-size: 2rem;
+  display: flex;
+}
+
+.artwork-page-seconds img {
+  margin-top: 20px;
+  width: 800px;
+  height: 800px;
+}
+
+#seconds {
+  font-weight: 900;
+  color: #DE271D;
+}
+
+/*-----------Lose Page-----------*/
 #lose-page {
   height: 600px;
   width: 1000px;
@@ -82,8 +150,10 @@ html {
   display: flex;
 }
 
+
+
 /*-----------Grid1 to Play-----------*/
-.grid{
+.grid1{
   width: 600px;
   height: 600px;
   display: grid;
@@ -94,81 +164,143 @@ html {
   box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
   }
 
-.grid > div {
+.grid1 > div {
   /*amb o sense marge*/
   background-color: white;
   font-size: 2rem;
   font-family: Arial, sans-serif; 
 }
 
-.grid div#a {
+.grid1 div#a0 {
   grid-row: 1/2;
   grid-column: 1/2;
   background-color: #ffffff
 }
 
-.grid div#b {
+.grid div#a1 {
   grid-row: 2/3;
   grid-column: 1/2;
   background-color: #ffffff
 }
 
-.grid div#c {
+.grid1 div#a2 {
   grid-row: 1/3;
   grid-column: 2/4;
   background-color: #ffffff;
 }
 
-.grid div#d {
+.grid1 div#a3 {
   grid-row: 3/5;
   grid-column: 1/2;
   background-color: #ffffff;
   color: white;
 }
 
-.grid div#e {
+.grid1 div#a4 {
   grid-row: 3/5;
   grid-column: 2/3;
   background-color: #ffffff
 }
 
-.grid div#f {
+.grid1 div#a5 {
   grid-row: 3/4;
   grid-column: 3/4;
   background-color: #ffffff
 }
 
-.grid div#g {
+.grid1 div#a6 {
   grid-row: 4/5;
   grid-column: 3/4;
   background-color: #ffffff;
 }
 
 /*-----------Color-buttons-----------*/
+#game-page{
+  justify-content: center;
+}
+.game-page-css{
+  display: flex;
+  justify-content: center;
+}
+.art-work {
+  margin-top: 50px;
+}
+.paint-colors {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
 
+.palette-colors{
+  display: flex;
+  gap: 20px
+}
 .palette-colors .blue {
   background-color: #015CA0;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1rem;
+  width: 4rem;
+  height: 4rem;
 }
 
 .palette-colors .red {
-  background-color: #DE271D
+  background-color: #DE271D;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1rem;
+  width: 4rem;
+  height: 4rem;
 }
 .palette-colors .yellow {
-  background-color: #ECDB6B
+  background-color: #ECDB6B;
+  color: #fff;
+    border: none;
+    padding: 0.8rem 1rem;
+    width: 4rem;
+    height: 4rem;
 }
 .palette-colors .white {
-  background-color: #ffffff
+  background-color: #ffffff;
+  color: #000;
+  border: 1px solid black;
+  padding: 0.8rem 1rem;
+  width: 4rem;
+  height: 4rem;
 }
 
 .palette-colors .grey {
-  background-color: #aaaaaa
+  background-color: #aaaaaa;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1rem;
+  width: 4rem;
+  height:4rem;
 }
 
 .palette-colors .black {
   background-color: #000;
-  color: white
+  color: white;
+  border: none;
+  padding: 0.8rem 1rem;
+  width: 4rem;
+  height: 4rem;
 }
 
+/*-----------Check Button I'm done-----------*/
+.finish-button{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+#check-button {
+  background-color: #ECDB6B;
+  color: #000;
+  border: none;
+  padding: 0.8rem 1rem;
+  width: 8rem;
+  height: 4rem;
+}
 
 /*-----------Grid2 to Play-----------*/
 
@@ -178,132 +310,131 @@ box-sizing: border-box;
 
 .grid2 {
   display: grid;
-  grid-template-columns: repeat(5, 1fr) 1.2fr 1.2fr 0.5fr;
-  grid-template-rows: 11vw repeat(5, 13vw) 11vw 6.5vw 6.5vw;
+  grid-template-columns: repeat(5, 70px) 90px 90px 30px; 
+  grid-template-rows: 30px repeat(5, 70px) 70px 65px 35px; 
   box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
-  max-width: 800px;
 }
 
-.grid2 > li {
+.grid2 > div {
   border: 0.5vw solid black;
   background-size: cover;
 }
 
-.grid2 li#a2 {
+.grid2 div#a0 {
   grid-column: span 2;
-  background-color: #E5EEEB;
+  background-color: #ffffff;
   border-top: none;
   border-left: none;
 }
 
-.grid2 li#b2 {
+.grid2 div#a1 {
   grid-column: span 3;
-  background-color: #F2E7D5;
+  background-color: #ffffff;
   border-top: none;
 }
 
-.grid2 li#c2 {
+.grid2 div#a2 {
   grid-column: span 2;
-  background-color: #F2C968;
+  background-color: #ffffff;
   border-top: none;
 }
 
-.grid2 li#d2 {
+.grid2 div#a3 {
   grid-row: span 6;
-  background-color: #FCFDE7;
+  background-color: #ffffff;
   border-top: none;
   border-right: none;
 }
 
-.grid2 li#e2 {
+.grid2 div#a4 {
   grid-row: span 2;
-  background-color: #FBFDE7;
+  background-color: #ffffff;
   border-left: none;
 }
 
-.grid2 li#f2 {
+.grid2 div#a5 {
   grid-column: span 4;
   grid-row: span 4;
-  background-color: #D62D24;
+  background-color: #ffffff;
 }
 
-.grid2 li#g2 {
+.grid2 div#a6 {
   grid-row: span 2;
   grid-column: span 2;
-  background-color: #EDCC6B;
+  background-color: #ffffff;
 }
 
-.grid2 li#h2 {
+.grid2 div#a7 {
   grid-row: span 3;
-  background-color: #E1EAE5;
+  background-color: #ffffff;
   border-left: none;
 }
 
-.grid2 li#i2 {
+.grid2 div#a8 {
   grid-row: span 2;
-  background-color: #DFE5D0;
+  background-color: #ffffff;
 }
 
-.grid2 li#j2 {
+.grid2 div#a9 {
   grid-row: span 2;
-  background-color: #F2EEE2;
+  background-color: #ffffff;
 }
 
-.grid2 li#k2 {
+.grid2 div#a10 {
   grid-row: span 2;
   grid-column: span 2;
-  background-color: #130409;
+  background-color: #ffffff;
 }
 
-.grid2 li#l2 {
+.grid2 div#a11 {
   grid-column: span 2;
-  background-color: #C0BFBA;
+  background-color: #ffffff;
 }
 
-.grid2 li#m2 {
+.grid2 div#a12 {
   grid-column: span 2;
-  background-color: #D6DEE0;
+  background-color: #ffffff;
 }
 
-.grid2 li#n2 {
+.grid2 div#a13 {
   grid-row: span 3;
-  background-color: #F4C65A;
+  background-color: #ffffff;
   border-left: none;
   border-bottom: none;
 }
 
-.grid2 li#o2 {
+.grid2 div#a14 {
   grid-column: span 2;
-  background-color: #DEE2D4;
+  background-color: #ffffff;
 }
 
-.grid2 li#p2 {
+.grid2 div#a15 {
   grid-row: span 2;
   grid-column: span 2;
-  background-color: #241785;
+  background-color: #ffffff;
 }
 
-.grid2 li#q2 {
+.grid2 div#a16 {
   grid-row: span 3;
-  background-color: #D73630;
+  background-color: #ffffff;
   border-bottom: none;
   border-right: none;
 }
 
-.grid2 li#r2 {
+.grid2 div#a17 {
   grid-column: span 2;
   grid-row: span 2;
-  background-color: #E3DED9;
+  background-color: #ffffff;
   border-bottom: none;
 }
 
-.grid2 li#s2 {
+.grid2 div#a18 {
   grid-column: span 2;
-  background-color: #0B0205;
+  background-color: #ffffff;
 }
 
-.grid2 li#t2 {
+.grid2 div#a19 {
   grid-column: span 4;
-  background-color: #E0E0DF;
+  background-color: #ffffff;
   border-bottom: none;
 }
