@@ -80,6 +80,22 @@ const painting2Solution = {
   a19: "white"
 } 
 
+//Win Page Image
+const artWorkWinPage1 = `
+  <img src="./img/Composition II in Red, Blue and Yellow - Mondrian.jpeg" alt="Composition II in Red, Blue and Yellow - Mondrian">
+  <h1 id = "title-win-page ">111Composition II in Red, Blue and Yellow</h1>
+  <p id="description-win-page">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec maximus libero sed maximus semper. Quisque eleifend
+  cursus mi vitae ultricies. Nam felis lacus, tincidunt sit amet odio id, consectetur tempus lectus. Sed magna mi,
+  bibendum in velit nec, consectetur aliquam lacus. Donec mauris lectus, mollis sit amet elementum eget, hendrerit eu
+  sapien.</p>`
+
+const artWorkWinPage2 = `
+  <img src="./img/Composition in Red, Yellow, blue and black - Mondrian.jpg" alt="Composition II in Red, Blue and Yellow - Mondrian">
+  <h1 id = "title-win-page ">Composition in Red, Blue and Yellow</h1>
+  <p id="description-win-page">222Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec maximus libero sed maximus semper. Quisque eleifend
+  cursus mi vitae ultricies. Nam felis lacus, tincidunt sit amet odio id, consectetur tempus lectus. Sed magna mi,
+  bibendum in velit nec, consectetur aliquam lacus. Donec mauris lectus, mollis sit amet elementum eget, hendrerit eu
+  sapien.</p>`
 //Button colors
 let colorsForPaint = ` 
   <div class="palette-colors">
@@ -110,3 +126,4 @@ const newArtWork = document.querySelector(".art-work")
 const newColorsPalette = document.querySelector(".paint-colors")
 
 const getDiv = document.getElementById("ArtworkGrid");
+const artWorkWinPage = document.getElementById("show-Artwork-description")

@@ -1,5 +1,5 @@
 class Game{
-  constructor(gridAndColorsOptions, rigthResult, level, correctImage) {
+  constructor(gridAndColorsOptions, rigthResult, level, correctImage, winPageThings) {
     this.gridAndColorsOptions = gridAndColorsOptions;
     this.rigthResult = rigthResult;
     this.correctImage = correctImage;
@@ -11,6 +11,7 @@ class Game{
     this.intervalId = null;
     this.userAnswer = [];
     this.level = level;
+    this.winPageThings = winPageThings;
     console.log(this.userAnswer)
     console.log(this.pickedColors)
   };
@@ -26,7 +27,7 @@ class Game{
     const artWorkImage = document.getElementById("artwork-image");
     artWorkImage.src=this.correctImage;
   }
-
+  
   printArtWorkAndColors() {
     console.log("call print art work and colorss");
    // Carregar obra d'art al HTML
@@ -54,6 +55,7 @@ class Game{
         console.log("You win!:)")
         winPage.style = "display: flex";
         losePage.style = "display: none";
+        this.printWinPage();
       } else if (this.userAnswer[i] !== getRealResult[i]){
         console.log("You lose! :(")
         losePage.style = "display: flex";
@@ -66,8 +68,31 @@ class Game{
   }
   cleanAll() {
     this.userAnswer = [];
-    //const game = new Game(painting1);
+    this.level = 1;
     this.printArtWorkAndColors();
- }
+  }
+  
+  changeSecondColor() {
+    if (this.seconds === 7) {
+      getSeconds.style.color = "#015CA0";
+    } if (this.seconds === 6) {
+      getSeconds.style.color = "#ECDB6B";
+    } if (this.seconds === 5) {
+      getSeconds.style.color = "#aaaaaa"
+    } if (this.seconds === 4) {
+      getSeconds.style.color = "#DE271D"
+    } if (this.seconds === 3) {
+      getSeconds.style.color = "#015CA0";
+    } if (this.seconds === 2) {
+      getSeconds.style.color = "#ECDB6B"
+    } if (this.seconds === 1) {
+      getSeconds.style.color = "#aaaaaa"
+    }
+  }
 
+  printWinPage() {
+    console.log(artWorkWinPage, this.winPageThings);
+    artWorkWinPage.innerHTML = this.winPageThings;
+  }
+ 
 }

@@ -5,13 +5,14 @@ window.onload = function () {
   
   //gamePage.style = "display: flex"//només per poder treballar en la pàgina del joc
 
-  function startGame(grid, solutions,level,image) { 
-    let game = new Game(grid,solutions,level,image);
+  function startGame(grid, solutions,level,image, winPage) { 
+    let game = new Game(grid,solutions,level,image, winPage);
     console.log('Starting', game)
     game.printArtWorkImage();
     artWorkPage.style = "display: flex";
     startPage.style = "display: none";
     game.intervalId = setInterval(() => {
+      game.changeSecondColor();
       game._restSeconds();
       getSeconds.innerHTML = game.seconds;
     }, 1000)
@@ -26,7 +27,7 @@ window.onload = function () {
   }
 
   startButton.onclick = () => {
-    startGame(gridAndColorsOne, painting1Solution, 1, "../img/Composition II in Red, Blue and Yellow - Mondrian.jpeg" )
+    startGame(gridAndColorsOne, painting1Solution, 1, "../img/Composition II in Red, Blue and Yellow - Mondrian.jpeg",artWorkWinPage1 )
   };
   
  //Si crido la funció adalt, no em funciona la funció de pintar els quadrats
@@ -79,7 +80,8 @@ let resultCompareArtWorks = null;
         console.log(`a${i}`)
         let userAswerFirst = document.getElementById(`a${i}`)
         console.log(userAswerFirst)
-       game.userAnswer.push(userAswerFirst.classList.value); 
+        game.userAnswer.push(userAswerFirst.classList.value);
+        
       }
       
       /*game.userAnswer.push(document.getElementById("a0").classList.value);
@@ -93,6 +95,7 @@ let resultCompareArtWorks = null;
       // intento guardar el resultat de comparar l'obra d'art i 
       resultCompareArtWorks = game.compareArtWorks();
       console.log(resultCompareArtWorks) 
+      
     }
   }
  //console.log(resultCompareArtWorks) 
@@ -109,11 +112,13 @@ let resultCompareArtWorks = null;
   function nextLevel(game) {
     const nextLevelButton = document.querySelector('.next-level-button')
     if (game.level === 2) {
-     nextLevelButton.setAttribute('disabled', '')
-    } 
+      nextLevelButton.setAttribute('disabled', '')
+     } else {
+        nextLevelButton.removeAttribute("disabled")
+      }
     nextLevelButton.onclick = () => {
-    if(game.level === 1) {
-    startGame(gridAndColorsTwo, painting2Solution, 2, "../img/Composition in Red, Yellow, blue and black - Mondrian.jpg")
+      if (game.level === 1) {
+    startGame(gridAndColorsTwo, painting2Solution, 2, "../img/Composition in Red, Yellow, blue and black - Mondrian.jpg", artWorkWinPage2)
       } 
       }
     }
@@ -135,9 +140,9 @@ function backToMenu (game) {
     tryAgain.onclick = function () {
       console.log("try again")
       if (game.level === 1) {
-      startGame(gridAndColorsOne, painting1Solution, 1,"../img/Composition II in Red, Blue and Yellow - Mondrian.jpeg")
+      startGame(gridAndColorsOne, painting1Solution, 1,"../img/Composition II in Red, Blue and Yellow - Mondrian.jpeg", artWorkWinPage1)
       } if (game.level === 2) {
-        startGame(gridAndColorsTwo, painting2Solution, 2, "../img/Composition in Red, Yellow, blue and black - Mondrian.jpg")
+        startGame(gridAndColorsTwo, painting2Solution, 2, "../img/Composition in Red, Yellow, blue and black - Mondrian.jpg", artWorkWinPage2)
       }
       }
       
