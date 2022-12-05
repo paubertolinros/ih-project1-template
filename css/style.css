@@ -332,19 +332,6 @@ strong {
   margin-top: 35px;
 }
 
-.left img {
-  width: 70px;
-  position: relative;
-  cursor: pointer;
-
-}
-
-.rigth img {
-  width: 70px;
-  cursor: pointer;
-  position: relative;
-}
-
 /*-----------Game Page - Color-buttons-----------*/
 .paint-colors {
   margin-top: 30px;
@@ -365,7 +352,7 @@ strong {
   width: 4rem;
   height: 4rem;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
-  transition: all 0.3s ease 0s;
+  transition: all 0.1s ease 0s;
   outline: none;
   cursor: pointer;
 }
@@ -375,7 +362,7 @@ strong {
   color: #fff;
   box-shadow: 0px 15px 20px rgba(1, 92, 160, 0.4);
   color: #fff;
-  transform: translateY(3px);
+  transform: translateY(2px);
 }
 
 .palette-colors .red {
@@ -387,14 +374,14 @@ strong {
   height: 4rem;
   cursor: pointer;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
-  transition: all 0.3s ease 0s;
+  transition: all 0.1s ease 0s;
   outline: none;
 }
 .palette-colors .red:hover {
   background-color: #DE271D;
   box-shadow: 0px 15px 20px rgba(222, 39, 29, 0.4);
   color: #fff;
-  transform: translateY(3px);
+  transform: translateY(2px);
 }
 .palette-colors .yellow {
   background-color: #ECDB6B;
@@ -405,14 +392,14 @@ strong {
   height: 4rem;
   cursor: pointer;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
-  transition: all 0.3s ease 0s;
+  transition: all 0.1s ease 0s;
   outline: none;
 }
 .palette-colors .yellow:hover{
   background-color: #ECDB6B;
   box-shadow: 0px 15px 20px rgb(236, 219, 107, 0.6);
   color: #fff;
-  transform: translateY(3px);
+  transform: translateY(2px);
 
 }
 .palette-colors .white {
@@ -424,14 +411,14 @@ strong {
   height: 4rem;
   cursor: pointer;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
-  transition: all 0.3s ease 0s;
+  transition: all 0.1s ease 0s;
   outline: none;
 }
 .palette-colors .white:hover{
   background-color: #ffffff;
   box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
   color: #fff;
-  transform: translateY(3px);
+  transform: translateY(2px);
 }
 
 .palette-colors .grey {
@@ -443,14 +430,14 @@ strong {
   height:4rem;
   cursor: pointer;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
-  transition: all 0.3s ease 0s;
+  transition: all 0.1s ease 0s;
   outline: none;
 }
 .palette-colors .grey:hover {
   background-color: #aaaaaa;
   box-shadow: 0px 15px 20px rgb(170, 170, 170, 0.8);
   color: #fff;
-  transform: translateY(3px);
+  transform: translateY(2px);
 }
 
 .palette-colors .black {
@@ -462,7 +449,7 @@ strong {
   height: 4rem;
   cursor: pointer;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
-  transition: all 0.3s ease 0s;
+  transition: all 0.1s ease 0s;
   outline: none;
 }
 
@@ -470,7 +457,7 @@ strong {
   background-color: #000;
   box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
   color: #fff;
-  transform: translateY(3px);
+  transform: translateY(2px);
 }
 
 /*-----------Instructions-----------*/
@@ -500,6 +487,11 @@ strong {
 .strong-li{
   font-weight: 900;
   font-size: 1.3rem
+}
+.left img {
+  width: 70px;
+  position: relative;
+  cursor: pointer;
 }
 
 /*-----------Hints-----------*/
@@ -551,6 +543,11 @@ background-color: white;
   -webkit-text-stroke: 0.4px black;
   color: rgb(255, 255, 255);
   -webkit-font-smoothing: antialiased;
+}
+.rigth img {
+  width: 70px;
+  cursor: pointer;
+  position: relative;
 }
 
 
@@ -684,7 +681,7 @@ width: 70rem;
   grid-row: 1/2;
   grid-column: 1/2;
   background-color: #ffffff;
-  transition: all 0.3s ease 0s;
+  transition: all 0.1s ease 0s;
   outline: none;
   cursor: pointer;
 }
@@ -698,7 +695,7 @@ width: 70rem;
   grid-row: 2/3;
   grid-column: 1/2;
   background-color: ffffff;
-  transition: all 0.3s ease 0s;
+  transition: all 0.1s ease 0s;
   outline: none;
   cursor: pointer;
 }
@@ -712,7 +709,7 @@ width: 70rem;
   grid-row: 1/3;
   grid-column: 2/4;
   background-color: #ffffff;
-  transition: all 0.3s ease 0s;
+  transition: all 0.1s ease 0s;
   outline: none;
   cursor: pointer;
 }
@@ -727,7 +724,7 @@ width: 70rem;
   grid-column: 1/2;
   background-color: #ffffff;
   color: white;
-  transition: all 0.3s ease 0s;
+  transition: all 0.1s ease 0s;
   outline: none;
   cursor: pointer;
 }
@@ -741,7 +738,7 @@ width: 70rem;
   grid-row: 3/5;
   grid-column: 2/3;
   background-color: #ffffff;
-  transition: all 0.3s ease 0s;
+  transition: all 0.1s ease 0s;
   outline: none;
   cursor: pointer;
 }
@@ -755,7 +752,7 @@ width: 70rem;
   grid-row: 3/4;
   grid-column: 3/4;
   background-color: #ffffff;
-  transition: all 0.3s ease 0s;
+  transition: all 0.1s ease 0s;
   outline: none;
   cursor: pointer;
 }
@@ -768,7 +765,7 @@ width: 70rem;
   grid-row: 4/5;
   grid-column: 3/4;
   background-color: #ffffff;
-  transition: all 0.3s ease 0s;
+  transition: all 0.1s ease 0s;
   outline: none;
   cursor: pointer;
 }

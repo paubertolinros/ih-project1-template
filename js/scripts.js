@@ -1,10 +1,7 @@
-
-
 // això és el mateix que posar window.addEventListener("load", (event) => {})
 window.onload = function () {
-  
-  //gamePage.style = "display: flex"//només per poder treballar en la pàgina del joc
-
+  //Codi que no acabo d'entendre, perquè haig de posar el de la línia d'abaix i no directament 
+  //especificar como ho faig a la línia 28
   function startGame(grid, solutions, level, image, winPage, int, hints) {
     let game = new Game(grid, solutions, level, image, winPage, int, hints);
     game.printArtWorkImage();
@@ -20,53 +17,41 @@ window.onload = function () {
         artWorkPage.style = "display: none";
         gamePage.style = "display: flex";
         game._stopSeconds();
-        //game.seconds = int;
-      }
-    }, 1000)
-    /*setTimeout(() => {
-      artWorkPage.style = "display: none";
-      gamePage.style = "display: flex";
-      game._stopSeconds();
-      getSeconds.innerHTML = game.seconds;
-    }, int);*/
+      };
+    }, 1000);
     game.printArtWorkAndColors();
     game._printHints();
     renderEverything(game);
-  }
-
-  startButton.onclick = () => {
-    startGame(gridAndColorsOne, painting1Solution, 1, "../img/Composition II in Red, Blue and Yellow - Mondrian.jpeg", artWorkWinPage1, 1, hintsLevel1);
-    
   };
-  
-  //Si crido la funció adalt, no em funciona la funció de pintar els quadrats
-  //game.printArtWorkAndColors();
-
-
+  //codi que no acabo d'entendre
+  startButton.onclick = () => {
+    startGame(gridAndColorsOne, painting1Solution, 1, "../img/Composition II in Red, Blue and Yellow - Mondrian.jpeg", artWorkWinPage1, 7, hintsLevel1);
+  };
   function colorButtons(game) {
     document.querySelectorAll(".palette-colors button").forEach((elem) => {
       elem.addEventListener("click", () => {
-        console.log(`${elem.classList[0]} color button clicked!`)
         game.pickedColors.push(elem.classList[0]);
+        console.log(elem.classList[0])
         game.pickedColorClass.push(elem.classList[1]);
+        console.log(elem.classList[1])
       });
     });
   };
-
   function changeSquareColor(game) {
     document.querySelectorAll(`.grid${game.level} div`).forEach((elem) => {
       elem.addEventListener("click", () => {
-        let getcolor = game.pickedColors[0];
+        //let getcolor = game.pickedColors[0];
+        let getcolor = game.pickedColors.pop();
+        console.log(getcolor)
         let getClass = game.pickedColorClass[0];
-        console.log(`${getcolor} is fantastic!`)
         elem.style.background = `${getcolor}`;
         elem.classList.replace(elem.classList[0], `${getClass}`)
         game.pickedColors = [];
         game.pickedColorClass = [];
       });
+      
     });
   };
-
   let resultCompareArtWorks = null;
   function readyToCompare(game, level) {
     winPage.style = "display: none";
@@ -79,18 +64,18 @@ window.onload = function () {
       };
       gamePage.style = "display: none";
       resultCompareArtWorks = game.compareArtWorks();
-    }
-  }
+    };
+  };
   function nextLevel(game) {
     const nextLevelButton = document.querySelector('.next-level-button');
     if (game.level === 2) {
-      nextLevelButton.setAttribute('disabled', '')
+      nextLevelButton.setAttribute('disabled', '');
     } else {
-      nextLevelButton.removeAttribute("disabled")
-    }
+      nextLevelButton.removeAttribute("disabled");
+    };
     nextLevelButton.onclick = () => {
       if (game.level === 1) {
-        startGame(gridAndColorsTwo, painting2Solution, 2, "../img/Composition in Red, Yellow, blue and black - Mondrian.jpg", artWorkWinPage2, 1, hintsLevel2);
+        startGame(gridAndColorsTwo, painting2Solution, 2, "../img/Composition in Red, Yellow, blue and black - Mondrian.jpg", artWorkWinPage2, 14, hintsLevel2);
       };
     };
   };
@@ -108,9 +93,9 @@ window.onload = function () {
   function tryAgainButton(game) {
     tryAgain.onclick = function () {
       if (game.level === 1) {
-        startGame(gridAndColorsOne, painting1Solution, 1, "../img/Composition II in Red, Blue and Yellow - Mondrian.jpeg", artWorkWinPage1, 1, hintsLevel1);
+        startGame(gridAndColorsOne, painting1Solution, 1, "../img/Composition II in Red, Blue and Yellow - Mondrian.jpeg", artWorkWinPage1, 7, hintsLevel1);
       } if (game.level === 2) {
-        startGame(gridAndColorsTwo, painting2Solution, 2, "../img/Composition in Red, Yellow, blue and black - Mondrian.jpg", artWorkWinPage2, 1, hintsLevel2);
+        startGame(gridAndColorsTwo, painting2Solution, 2, "../img/Composition in Red, Yellow, blue and black - Mondrian.jpg", artWorkWinPage2, 14, hintsLevel2);
       };
     };   
   };
@@ -130,7 +115,6 @@ window.onload = function () {
     hintsImage.onclick = function () {
       getHintsContainer.style = "display: flex";
       countClicks++;
-      console.log(countClicks)
       setTimeout(() => {
         getHintsContainer.style = "display: none";
       }, 5000)
