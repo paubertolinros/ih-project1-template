@@ -17,16 +17,29 @@
 
   <div id="start-page">
     <main>
-      <h1>Mondrian's dream</h1>
+      <h1 class="rainbow-letters">
+      <span class="m">M</span>
+      <span class="o">o</span>
+      <span class="n">n</span>
+      <span class="d">d</span>
+      <span class="r">r</span>
+      <span class="i">i</span>
+      <span class="a">a</span>
+      <span class="n">n</span>
+      <span class="'">'</span>
+      <span class="s">s</span>
+      <br>
+      <span class="D">D</span>
+      <span class="r">r</span>
+      <span class="e">e</span>
+      <span class="a">a</span>
+      <span class="m">m</span></h1>
       <div class = "ins-and-desc">
         <div class="instructions">
-          <p class = "ins">Instructions </p>
-        </div>
-        <div class="description">
-          <p class="des">Description</p>
+          <p class = "ins">Mondrian ha tenido un sueño. Un sueño dónde aparecía un cuadro con muchos colores. Cuando se ha despertado ha querido pintar el cuadro de sus sueños, pero no ha conseguido recordar los colores que aparecían en él. <br> En este juego tendrás la oportunidad de ver el cuadro que ha soñado Mondrian durante unos segundos. Cuando lo veas, tendrás que intentar memorizar los colores para después poder plasmarlos en un cuadro en blanco. <br> ¿Ayudarás a Mondrian a recuperar el cuadro de sus sueños? </p>
         </div>
       </div>
-      <button id="start">START</button>
+      <button id="start">LET'S SEE THE DREAM!</button>
     </main>
   </div>
 
@@ -43,8 +56,21 @@
 
   <div id="game-page" class="hidden">
     <div class="game-page-css">
+      <div class = "left">
+        <img id = "instru-left" src="./img/information-red.png" alt="information icon">
+        <div id="instructions">
+          <main class="instr-container">
+            <ul>
+              <li><strong class="strong-li">1.</strong> Selecciona el color</li>
+              <li><strong class="strong-li">2.</strong> Fes click sobre el quadrat</li>
+              <li><strong class="strong-li">3.</strong> Torna a seleccionar un color</li>
+              <li><strong class="strong-li">4.</strong> Quan hagis acabat fes click al botó de "I'm done!"</li>
+            </ul>
+          </main>
+        </div>
+      </div>
       <main>
-        <h1>Can you help mondrian to complete his dream?</h1>
+        <h1>Can you help Mondrian to complete his dream?</h1>
         <div class="art-work"> 
         </div>
         <div class="paint-colors"></div>
@@ -52,13 +78,19 @@
             <button id="check-button"> I'm done! </button>
           </div>
       </main>
+      <div class = "rigth">
+        <img id = "hints-rigth" src="./img/hint-blue.png" alt="information icon">
+        <div id="hints">
+          
+        </div>
+      </div>
     </div>
   </div>
 
   <div id="lose-page">
     <div>
       <main>
-        <h1>TRY AGAIN!</h1>
+        <h1>Has estado muy cerca de conseguir el sueño de Mondrian. <br> ¿Lo vuelves a intentar?</h1>
         <div class ="buttons-lose-page">
           <button class="back-menu-button"> Back to menu! </button>
           <button class="try-again-button"> Try again! </button>
@@ -68,16 +100,20 @@
   </div>
 
   <div id="win-page">
-    <main>
-      <h1>YOU WIN!</h1>
-      <div id="show-Artwork-description">
-      </div>
-      <div>
-        <button class="menu-button"> Back to menu! </button>
-        <button class="next-level-button"> Next level! </button>
-      </div>
-    </main>
+    <div>
+      <main>
+        <h1 class="win-message">Felicidades! Has ayudado a Mondrian a recordar los colores del cuadro de sus sueños! </h1>
+        <div id="show-Artwork-description">
+        </div>
+        <div class="buttons-win-page">
+          <button class="back-menu-button"> Back to menu! </button>
+          <button class="next-level-button"> Next level! </button>
+        </div>
+      </main>
+    </div>
   </div>
+
+  
 
   <script src="js/paintingAssets.js"></script>
   <script src="js/game.js"></script>

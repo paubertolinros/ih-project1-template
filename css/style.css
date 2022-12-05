@@ -6,12 +6,16 @@
 html {
   width: 100vw;
   height: 100vh;
-  background-color: #f9f5f2;
-}
+  background: #f9f5f2;
+  background: linear-gradient(180deg, rgba(249, 245, 242, 1) 51%, rgba(245, 245, 245, 1) 94%);}
 
 body, button {
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
+}
+
+strong {
+  font-weight: 900;
 }
 
 /*-----------Auxiliar classes-----------*/
@@ -29,65 +33,181 @@ body, button {
 #start-page {
   height: 100vh;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   text-align: center;
-  background-image: url(../img/AdobeStock_410015057_Preview\ copy.jpeg);
-  background-position: top center;
+  background-image: url(../img/mondrians-dream-background.jpeg);
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 #start-page main {
-  padding-top: 5rem
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3rem;
+  background-color: #f9f5f2;
+  width: 70rem;
 }
-#start-page main h1 {
+
+
+#start-page main h1.rainbow-letters {
   font-size: 6rem;
-  color: white;
-  text-shadow:2px 2px 19px white;
+  text-transform: uppercase;
 }
+
+.rainbow-letters span:nth-child(10n + 1) {
+  color: #015CA0;
+}
+
+.rainbow-letters span:nth-child(10n + 2) {
+  color: #DE271D;
+}
+
+.rainbow-letters span:nth-child(10n + 3) {
+  color: #ECDB6B;
+}
+
+.rainbow-letters span:nth-child(10n + 5) {
+  color: #aaaaaa;
+}
+
+.rainbow-letters span:nth-child(10n + 4) {
+  color: #000000;
+}
+
+.rainbow-letters span:nth-child(10n + 6) {
+  color: #015CA0;
+}
+
+.rainbow-letters span:nth-child(10n + 7) {
+  color: #DE271D;
+}
+
+.rainbow-letters span:nth-child(10n + 8) {
+  color: #ECDB6B;
+}
+
+.rainbow-letters span:nth-child(10n + 9) {
+  color: #aaaaaa;
+}
+
+.rainbow-letters span:nth-child(10n + 10) {
+  color: #000000;
+}
+.rainbow-letters span:nth-child(10n + 11) {
+  color: #015CA0;
+}
+.rainbow-letters span:nth-child(10n + 12) {
+  color: #015CA0;
+}
+.rainbow-letters span:nth-child(10n + 13) {
+  color: #DE271D;
+}
+.rainbow-letters span:nth-child(10n + 14) {
+  color: #ECDB6B;
+}
+.rainbow-letters span:nth-child(10n + 15) {
+  color: #000000;
+}
+.rainbow-letters span:nth-child(10n + 16) {
+  color: #aaaaaa;
+}
+
 #start-page main div.ins-and-desc {
   display: flex;
-  justify-content: space-between;
-  margin-top: 8.5rem;
-  gap: 40rem;
+  margin-top: 2.5rem;
 }
 #start-page main div.ins-and-desc div.instructions {
   display: flex;
-  justify-content: center;
-  background-color: #DE271D;
-  width: 10rem;
-  height: 12.5rem;
-  cursor: pointer
+  background-color: #DE271D #ECDB6B;
+  width: 60rem;
 }
 
-#start-page main div.ins-and-desc div.description {
-  display: flex;
-  justify-content: center;
-  background-color: #ECDB6B;
-  width: 10rem;
-  height: 12.5rem;
-  margin-top: 0.2rem;
-}
 #start-page main div.ins-and-desc div.instructions p.ins {
   display: flex;
+  flex-direction: row;
   align-items: center;
-  font-size: 1.5rem;
-  color: #fff; 
+  font-size: 1.2rem;
+  line-height: 25px;
+  color:black; 
 }
-#start-page main div.ins-and-desc div.description p.des {
-  display: flex;
-  align-items: center;
-  font-size: 1.5rem;
-  color: #fff;
-}
+/*
 #start-page main button {
-  background-color: rgb(23, 72, 163);
+  background-color: #DE271D;
   color: #fff;
+  border: none;
   border: 1px solid rgb(23, 72, 163);
-  padding: 1.5rem 0.9rem;
+  padding: 1rem 2.5rem;
   margin-top: 2.1rem;
+  margin-bottom: 2.1rem;
+  cursor: pointer;
 }
+
+#start-page main button {
+  text-decoration: none;
+  border: none;
+  color: #fff;
+  text-align: center;
+  background: linear-gradient(90deg,  #ECDB6B, #DE271D, #015CA0,#aaaaaa,#ECDB6B);
+  background-size: 300%;
+  border-radius: 20px;
+  z-index: 1;
+}
+
+#start-page main button:hover {
+  animation: ani 8s linear infinite;
+  border: none;
+}
+
+@keyframes ani {
+  0% {
+    background-position: 0%;
+  }
+
+  100% {
+    background-position: 400%;
+  }
+}
+
+#start-page main button:before {
+  content: '';
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;
+  background: linear-gradient(90deg, #ECDB6B, #DE271D,#015CA0, #aaaaaa,#ECDB6B);
+  background-size: 400%;
+  border-radius: 35px;
+  transition: 1s;
+}
+
+#start-page main button:hover::before {
+  filter: blur(20px);
+}
+
+#start-page main button:active {
+  background: linear-gradient(32deg, #015CA0, #ECDB6B,#DE271D,#aaaaaa);
+}*/
+
+#start-page main button {
+  background-color: #DE271D;
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  margin-top: 2.1rem;
+  margin-bottom: 2.1rem;
+  cursor: pointer;
+}
+
+#start-page main button:hover {
+  background-color: #ECDB6B;
+  color:rgb(23, 72, 163);
+}
+
 
 /*-----------Artwork Seconds Page-----------*/
 #artwork-page {
@@ -130,16 +250,39 @@ body, button {
 .back-menu-button {
   background-color: rgb(23, 72, 163);
   color: #fff;
-  border: 1px solid rgb(23, 72, 163);
+  border: none;
   width: 10rem;
   padding: 1.5rem 0.9rem;
 }
 .try-again-button {
   background-color: #ECDB6B;
   color: #000;
-  border: 1px solid #ECDB6B;
+  border: none;
   padding: 1.5rem 0.9rem;
   width: 10rem;
+}
+
+.back-menu-button:hover {
+  background-color: #ECDB6B;
+  color: #000;
+}
+
+.try-again-button:hover {
+  background-color: #DE271D;
+  color: #fff;
+}
+
+.next-level-button {
+  background-color: #DE271D;
+  color: #fff;
+  border: none;
+  width: 10rem;
+  padding: 1.5rem 0.9rem;
+}
+
+.next-level-button:hover {
+  background-color: #ECDB6B;
+  color: #000;
 }
 
 #lose-page {
@@ -147,6 +290,10 @@ body, button {
 }
 
 #win-page {
+  display: none;
+}
+
+#instructions {
   display: none;
 }
 
@@ -158,10 +305,44 @@ body, button {
 }
 .game-page-css{
   display: flex;
+  justify-content: space-evenly;
+}
+.game-page-css .left {
+  display: flex;
+  align-items: center;
+  margin-right: 200px;
+  
+}
+.game-page-css .rigth {
+  display: flex;
+  align-items: center;
+  margin-left: 200px;
+}
+.game-page-css main{
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+}
+.game-page-css main h1 {
+  font-size: 2rem;
+  margin-top: 50px;
 }
 .art-work {
-  margin-top: 50px;
+  margin-top: 35px;
+}
+
+.left img {
+  width: 70px;
+  position: relative;
+  cursor: pointer;
+
+}
+
+.rigth img {
+  width: 70px;
+  cursor: pointer;
+  position: relative;
 }
 
 /*-----------Game Page - Color-buttons-----------*/
@@ -173,7 +354,8 @@ body, button {
 
 .palette-colors{
   display: flex;
-  gap: 20px
+  gap: 20px;
+  
 }
 .palette-colors .blue {
   background-color: #015CA0;
@@ -182,6 +364,18 @@ body, button {
   padding: 0.8rem 1rem;
   width: 4rem;
   height: 4rem;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease 0s;
+  outline: none;
+  cursor: pointer;
+}
+
+.palette-colors .blue:hover {
+  background-color: #015CA0;
+  color: #fff;
+  box-shadow: 0px 15px 20px rgba(1, 92, 160, 0.4);
+  color: #fff;
+  transform: translateY(3px);
 }
 
 .palette-colors .red {
@@ -191,22 +385,53 @@ body, button {
   padding: 0.8rem 1rem;
   width: 4rem;
   height: 4rem;
+  cursor: pointer;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease 0s;
+  outline: none;
+}
+.palette-colors .red:hover {
+  background-color: #DE271D;
+  box-shadow: 0px 15px 20px rgba(222, 39, 29, 0.4);
+  color: #fff;
+  transform: translateY(3px);
 }
 .palette-colors .yellow {
   background-color: #ECDB6B;
   color: #fff;
-    border: none;
-    padding: 0.8rem 1rem;
-    width: 4rem;
-    height: 4rem;
+  border: none;
+  padding: 0.8rem 1rem;
+  width: 4rem;
+  height: 4rem;
+  cursor: pointer;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease 0s;
+  outline: none;
+}
+.palette-colors .yellow:hover{
+  background-color: #ECDB6B;
+  box-shadow: 0px 15px 20px rgb(236, 219, 107, 0.6);
+  color: #fff;
+  transform: translateY(3px);
+
 }
 .palette-colors .white {
   background-color: #ffffff;
   color: #000;
-  border: 1px solid black;
+  border: 1px solid grey;
   padding: 0.8rem 1rem;
   width: 4rem;
   height: 4rem;
+  cursor: pointer;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease 0s;
+  outline: none;
+}
+.palette-colors .white:hover{
+  background-color: #ffffff;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  transform: translateY(3px);
 }
 
 .palette-colors .grey {
@@ -216,6 +441,16 @@ body, button {
   padding: 0.8rem 1rem;
   width: 4rem;
   height:4rem;
+  cursor: pointer;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease 0s;
+  outline: none;
+}
+.palette-colors .grey:hover {
+  background-color: #aaaaaa;
+  box-shadow: 0px 15px 20px rgb(170, 170, 170, 0.8);
+  color: #fff;
+  transform: translateY(3px);
 }
 
 .palette-colors .black {
@@ -225,7 +460,99 @@ body, button {
   padding: 0.8rem 1rem;
   width: 4rem;
   height: 4rem;
+  cursor: pointer;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease 0s;
+  outline: none;
 }
+
+.palette-colors .black:hover {
+  background-color: #000;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  transform: translateY(3px);
+}
+
+/*-----------Instructions-----------*/
+#instructions {
+  background-color: #ECDB6B;
+  width: 300px;
+  height: 200px;
+  position: absolute;
+  left: 140px;
+  color: #000;
+  cursor: pointer;
+}
+
+#instructions .instr-container {
+  display: flex;
+}
+
+#instructions .instr-container ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 30px;
+  line-height: 30px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.strong-li{
+  font-weight: 900;
+  font-size: 1.3rem
+}
+
+/*-----------Hints-----------*/
+#hints {
+background-color: white;
+ width: 250px;
+ height: 250px;
+ position: absolute;
+ right: 160px;
+ color: #000;
+ cursor: pointer;
+ display: none;
+}
+
+#hints .hints-container {
+  display: flex;
+}
+
+#hints .hints-container ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 30px;
+  line-height: 30px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.strong-li-hints{
+  font-weight: 900;
+  font-size: 1.3rem;
+}
+.hints-number-size {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.strong-li-hints.blue {
+  color:#015CA0;
+}
+.strong-li-hints.yellow {
+  color: #ECDB6B;
+}
+.strong-li-hints.red {
+  color: #DE271D;
+}
+.strong-li-hints.grey {
+  color: #aaaaaa;
+}
+.strong-li-hints.white {
+  -webkit-text-stroke: 0.4px black;
+  color: rgb(255, 255, 255);
+  -webkit-font-smoothing: antialiased;
+}
+
 
 /*-----------Check Button I'm done-----------*/
 .finish-button{
@@ -240,33 +567,49 @@ body, button {
   padding: 0.8rem 1rem;
   width: 8rem;
   height: 4rem;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+#check-button:hover {
+  background-color: #015CA0;
+  color: #fff;
+  box-shadow: 0px 15px 20px rgba(1, 92, 160, 0.4);
+  color: #fff;
+  transform: translateY(3px);
 }
 
 /*-----------Lose Page-----------*/
 #lose-page {
-  display: flex;
-  justify-content: center;
-  
+  height: 100vh;
+  display: none;
+  justify-content: center; 
+  background-image: url(../img/mondrians-dream-background.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
 #lose-page div {
   display: flex;
-    justify-content: center;
-    align-items: center;
+  justify-content: center;  
 }
 
-#lose-page div main {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-
-
+#lose-page main {
+display: flex;
+flex-direction: column;
+text-align: center;
+justify-content: center;
+align-items: center;
+padding-top: 1rem;
+background-color: #f9f5f2;
+margin: 18rem 0;
+width: 70rem;
 }
 
 #lose-page main h1 {
-  font-size: 14rem;
-  
+  font-size: 2.3rem;
+  margin-bottom: 3rem;
 }
 
 #lose-page main .buttons-lose-page {
@@ -275,20 +618,47 @@ body, button {
   gap: 45px;
 }
 
-
 /*-----------Win Page-----------*/
 
 #win-page {
-  height: 600px;
-  width: 1000px;
-  display: flex;
+  height: 100vh;
+  display: none;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   text-align: center;
-  margin: 0 auto;
- 
-  margin-top: 30px;
+}
+#win-page div main {
+  padding: 0 300px
+}
+
+#win-page div main h1.win-message {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+#show-Artwork-description {
+  margin-bottom: 50px
+}
+
+#title-win-page {
+  font-size: 3rem;
+  margin: 2rem 0rem;
+}
+
+#win-page img {
+  width: 450px;
+}
+
+#description-win-page {
+  font-size: 1.2rem;
+  line-height: 25px;
+}
+
+.buttons-win-page {
+  display: flex;
+    justify-content: center;
+    gap: 45px;
 }
 
 /*-----------Grid1 to Play-----------*/
@@ -300,7 +670,7 @@ body, button {
   grid-template-columns: 124px 376px 60px;
   grid-gap: 30px 20px;
   background-color: black;
-  box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
+  box-shadow:0px 8px 15px rgba(0, 0, 0, 0.5);
 }
 
 .grid1>div {
@@ -313,19 +683,43 @@ body, button {
 .grid1 div#a0 {
   grid-row: 1/2;
   grid-column: 1/2;
-  background-color: #ffffff
+  background-color: #ffffff;
+  transition: all 0.3s ease 0s;
+  outline: none;
+  cursor: pointer;
 }
 
-.grid div#a1 {
+.grid1 div#a0:hover{
+  box-shadow: 0px 10px 20px rgb(255, 255, 255, 0.4);
+  transform: translateY(1px);
+}
+
+.grid1 div#a1 {
   grid-row: 2/3;
   grid-column: 1/2;
-  background-color: #ffffff
+  background-color: ffffff;
+  transition: all 0.3s ease 0s;
+  outline: none;
+  cursor: pointer;
+}
+
+.grid1 div#a1:hover {
+  box-shadow: 10px 10px 20px rgb(255, 255, 255, 0.4);
+  transform: translateY(1px);
 }
 
 .grid1 div#a2 {
   grid-row: 1/3;
   grid-column: 2/4;
   background-color: #ffffff;
+  transition: all 0.3s ease 0s;
+  outline: none;
+  cursor: pointer;
+}
+
+.grid1 div#a2:hover {
+  box-shadow: 0px 10px 20px rgb(255, 255, 255, 0.4);
+  transform: translateY(1px);
 }
 
 .grid1 div#a3 {
@@ -333,24 +727,54 @@ body, button {
   grid-column: 1/2;
   background-color: #ffffff;
   color: white;
+  transition: all 0.3s ease 0s;
+  outline: none;
+  cursor: pointer;
+}
+
+.grid1 div#a3:hover {
+  box-shadow: 0px 10px 20px rgb(255, 255, 255, 0.4);
+  transform: translateY(1px);
 }
 
 .grid1 div#a4 {
   grid-row: 3/5;
   grid-column: 2/3;
-  background-color: #ffffff
+  background-color: #ffffff;
+  transition: all 0.3s ease 0s;
+  outline: none;
+  cursor: pointer;
+}
+
+.grid1 div#a4:hover {
+  box-shadow: 0px 10px 20px rgb(255, 255, 255, 0.4);
+  transform: translateY(1px);
 }
 
 .grid1 div#a5 {
   grid-row: 3/4;
   grid-column: 3/4;
-  background-color: #ffffff
+  background-color: #ffffff;
+  transition: all 0.3s ease 0s;
+  outline: none;
+  cursor: pointer;
+}
+.grid1 div#a5:hover {
+  box-shadow: 0px 10px 20px rgb(255, 255, 255, 0.4);
+  transform: translateY(1px);
 }
 
 .grid1 div#a6 {
   grid-row: 4/5;
   grid-column: 3/4;
   background-color: #ffffff;
+  transition: all 0.3s ease 0s;
+  outline: none;
+  cursor: pointer;
+}
+.grid1 div#a6:hover {
+  box-shadow: 0px 10px 20px rgb(255, 255, 255, 0.4);
+  transform: translateY(1px);
 }
 
 /*-----------Grid2 to Play-----------*/
@@ -363,7 +787,7 @@ box-sizing: border-box;
   display: grid;
   grid-template-columns: repeat(5, 70px) 90px 90px 30px; 
   grid-template-rows: 30px repeat(5, 70px) 70px 65px 35px; 
-  box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5)
 }
 
 .grid2 > div {

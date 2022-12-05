@@ -1,12 +1,4 @@
-//!!!!!!!!!!!! per cadascun dels quadres posar un html (exemple cards)
-//Variable per HTML de l'obra d'art. En el cas que fos un Array d'objectes podria afegir més obres?
-//Obra1
-/*let gridAndColorsOne = `
-  <div id="paint">`
-  class="grid"
-  "class="grid2"
-  */
-
+// ArtWork level 1
 let gridAndColorsOne = `
   <div id ="ArtworkGrid" >
     <div id="a0" class = "white">a</div>
@@ -17,7 +9,8 @@ let gridAndColorsOne = `
     <div id="a5" class = "white">f</div>
     <div id="a6" class = "white">g</div>
   </div>
-  `
+  `;
+// ArtWork level 2
 let gridAndColorsTwo = `
     <div id = "ArtworkGrid" >
       <div id="a0" class="white">a0</div>
@@ -41,9 +34,8 @@ let gridAndColorsTwo = `
       <div id="a18" class="white">a18</div>
       <div id="a19" class="white">a19</div>
     </div>
-`
-
-// Obra 1 per comprar
+`;
+// Result Artwork 1
 const painting1Solution = {
   a0: "white",
   a1: "white",
@@ -52,11 +44,8 @@ const painting1Solution = {
   a4: "white",
   a5: "white",
   a6: "yellow"
-} 
-// if (game.level === 2) {
-//      nextLevelButton.setAttribute('disabled', '')
-//     }
-// Obra 2 per comprar
+}; 
+// Result Artwork 2
 const painting2Solution = {
   a0: "grey",
   a1: "white",
@@ -72,30 +61,38 @@ const painting2Solution = {
   a11: "grey",
   a12: "white",
   a13: "yellow",
-  a14: "white",
+  a14: "grey",
   a15: "blue",
   a16: "red",
   a17: "white",
   a18: "black",
   a19: "white"
-} 
-
-//Win Page Image
-const artWorkWinPage1 = `
-  <img src="./img/Composition II in Red, Blue and Yellow - Mondrian.jpeg" alt="Composition II in Red, Blue and Yellow - Mondrian">
-  <h1 id = "title-win-page ">111Composition II in Red, Blue and Yellow</h1>
-  <p id="description-win-page">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec maximus libero sed maximus semper. Quisque eleifend
-  cursus mi vitae ultricies. Nam felis lacus, tincidunt sit amet odio id, consectetur tempus lectus. Sed magna mi,
-  bibendum in velit nec, consectetur aliquam lacus. Donec mauris lectus, mollis sit amet elementum eget, hendrerit eu
-  sapien.</p>`
-
-const artWorkWinPage2 = `
-  <img src="./img/Composition in Red, Yellow, blue and black - Mondrian.jpg" alt="Composition II in Red, Blue and Yellow - Mondrian">
-  <h1 id = "title-win-page ">Composition in Red, Blue and Yellow</h1>
-  <p id="description-win-page">222Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec maximus libero sed maximus semper. Quisque eleifend
-  cursus mi vitae ultricies. Nam felis lacus, tincidunt sit amet odio id, consectetur tempus lectus. Sed magna mi,
-  bibendum in velit nec, consectetur aliquam lacus. Donec mauris lectus, mollis sit amet elementum eget, hendrerit eu
-  sapien.</p>`
+}; 
+//Hints Level 1
+const hintsLevel1 = `
+<main class="hints-container">
+  <ul>
+    <li><strong class="strong-li-hints blue">Blue</strong>: <span class= "hints-number-size">1</span> square</li>
+    <li><strong class="strong-li-hints yellow">Yellow</strong>: <span class="hints-number-size">1</span> square</li>
+    <li><strong class="strong-li-hints red">Red</strong>: <span class="hints-number-size">1</span> square</li>
+    <li><strong class="strong-li-hints grey">Grey</strong>: <span class="hints-number-size">0</span> squares</li>
+    <li><strong class="strong-li-hints black">Black</strong>: <span class="hints-number-size">0</span> squares</li>
+    <li><strong class="strong-li-hints white">White</strong>: <span class="hints-number-size">4</span> squares</li>
+  </ul>
+</main>`;
+//Hints Level 2
+const hintsLevel2 = `
+<main class="hints-container">
+  <ul>
+    <li><strong class="strong-li-hints blue">Blue</strong>: <span class= "hints-number-size">1</span> square</li>
+    <li><strong class="strong-li-hints yellow">Yellow</strong>: <span class="hints-number-size">3</span> squares</li>
+    <li><strong class="strong-li-hints red">Red</strong>: <span class="hints-number-size">2</span> squares</li>
+    <li><strong class="strong-li-hints grey">Grey</strong>: <span class="hints-number-size">5</span> squares</li>
+    <li><strong class="strong-li-hints black">Black</strong>: <span class="hints-number-size">2</span> squares</li>
+    <li><strong class="strong-li-hints white">White</strong>: <span class="hints-number-size">7</span> squares</li>
+  </ul>
+</main>
+`;
 //Button colors
 let colorsForPaint = ` 
   <div class="palette-colors">
@@ -105,25 +102,38 @@ let colorsForPaint = `
     <button class="#ffffff white"></button>
     <button class="#d4d4d4 grey"></button>
     <button class="#000000 black"></button>
-  </div>`
-
-// HTMl elements
-const losePage = document.getElementById('lose-page');
-const winPage = document.getElementById('win-page');
+  </div>`;
+//Win Page Image level 1
+const artWorkWinPage1 = `
+  <img src="./img/Composition II in Red, Blue and Yellow - Mondrian.jpeg" alt="Composition II in Red, Blue and Yellow - Mondrian">
+  <h1 id = "title-win-page">Composition II in <font color="#DE271D">Red</font>, <font color="#015CA0">Blue</font> and <font color="#ECDB6B">Yellow</font> - 1930</h1>
+  <p id="description-win-page">Mondrian was born in 1872 in Netherlands, and died in 1944 in New York. <br> He developed a new concept of abstraction, <strong>neoplasticism</strong>, a movement focused on <strong>reducing art to its minimum expression</strong>, using only the <strong>primary colors red, blue, white, yellow and black</strong>, and geometric forms. Uno de los objetivos de su obra neoplastica, era aspirar a una pintura no sentimental, no subjetiva e independiente de cualquier contingencia histórica, cultural o geográfica.</p>`;
+//Win Page Image level 2
+const artWorkWinPage2 = `
+  <img src="./img/Composition in Red, Yellow, blue and black - Mondrian.jpg" alt="Composition II in Red, Blue and Yellow - Mondrian">
+  <h1 id = "title-win-page">Composition en <font color="#DE271D">Rouge</font>, <font color="#ECDB6B">Jaune</font>, <font color="#000000">Bleu</font>, <font color="#ECDB6B">Noir</font> - 1921</h1>
+  <p id="description-win-page">Mondrian,junto con otros artistas abstractos, crearon el movimiento artístico De Stijl, donde se centralizaron los estilos del Neoplasticismo de Mondrian. De esta forma su concepto se podría utilizar como herramienta para aplicarlo en la arquitectura o cualquier disciplina artística. Como por ejemplo La Casa Schröder (1924), una casa Patrimonio de la Unesco inspirada en la obra de Mondrian. </p>`;
+// HTML selectors
+////////Start Page
 const startPage = document.getElementById('start-page');
 const startButton = document.getElementById('start');
+////////Show ArtWork Page
 const artWorkPage = document.getElementById('artwork-page');
-const gamePage = document.getElementById('game-page');
 const getSeconds = document.getElementById('seconds');
-//const getButtonColors = document.querySelectorAll(".palette-colors button");
-// el botó de la Game Page t'ha de portar a la pàgina de win or lose, és clicable
+////////Game Page
+const gamePage = document.getElementById('game-page');
 const finishButton = document.getElementById('check-button');
-  
- //Aquí hauria de posar la foto de l'obra al html, perquè ara ho he posat directament a l'index HTML  
-let artWorkpicture = 0;
-
-const newArtWork = document.querySelector(".art-work")
-const newColorsPalette = document.querySelector(".paint-colors")
-
+const getInstructions = document.getElementById("instructions");
+const instructionsImage = document.getElementById("instru-left");
+const hintsImage = document.getElementById("hints-rigth");
+const getHintsContainer = document.getElementById("hints");
+const newArtWork = document.querySelector(".art-work");
+const newColorsPalette = document.querySelector(".paint-colors");
 const getDiv = document.getElementById("ArtworkGrid");
-const artWorkWinPage = document.getElementById("show-Artwork-description")
+////////Win Page
+const winPage = document.getElementById('win-page');
+////////Lose Page
+const losePage = document.getElementById('lose-page');
+const tryAgain = document.querySelector('.try-again-button');
+const artWorkWinPage = document.getElementById("show-Artwork-description");
+
