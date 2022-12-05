@@ -25,7 +25,7 @@ window.onload = function () {
   };
   //codi que no acabo d'entendre
   startButton.onclick = () => {
-    startGame(gridAndColorsOne, painting1Solution, 1, "../img/Composition II in Red, Blue and Yellow - Mondrian.jpeg", artWorkWinPage1, 7, hintsLevel1);
+    startGame(gridAndColorsOne, painting1Solution, 1, "./img/Composition II in Red, Blue and Yellow - Mondrian.jpeg", artWorkWinPage1, 7, hintsLevel1);
   };
   function colorButtons(game) {
     document.querySelectorAll(".palette-colors button").forEach((elem) => {
@@ -75,7 +75,7 @@ window.onload = function () {
     };
     nextLevelButton.onclick = () => {
       if (game.level === 1) {
-        startGame(gridAndColorsTwo, painting2Solution, 2, "../img/Composition in Red, Yellow, blue and black - Mondrian.jpg", artWorkWinPage2, 14, hintsLevel2);
+        startGame(gridAndColorsTwo, painting2Solution, 2, "./img/Composition in Red, Yellow, blue and black - Mondrian.jpg", artWorkWinPage2, 14, hintsLevel2);
       };
     };
   };
@@ -93,9 +93,9 @@ window.onload = function () {
   function tryAgainButton(game) {
     tryAgain.onclick = function () {
       if (game.level === 1) {
-        startGame(gridAndColorsOne, painting1Solution, 1, "../img/Composition II in Red, Blue and Yellow - Mondrian.jpeg", artWorkWinPage1, 7, hintsLevel1);
+        startGame(gridAndColorsOne, painting1Solution, 1, "./img/Composition II in Red, Blue and Yellow - Mondrian.jpeg", artWorkWinPage1, 7, hintsLevel1);
       } if (game.level === 2) {
-        startGame(gridAndColorsTwo, painting2Solution, 2, "../img/Composition in Red, Yellow, blue and black - Mondrian.jpg", artWorkWinPage2, 14, hintsLevel2);
+        startGame(gridAndColorsTwo, painting2Solution, 2, "./img/Composition in Red, Yellow, blue and black - Mondrian.jpg", artWorkWinPage2, 14, hintsLevel2);
       };
     };   
   };

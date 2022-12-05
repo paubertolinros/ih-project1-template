@@ -105,13 +105,13 @@ let colorsForPaint = `
   </div>`;
 //Win Page Image level 1
 const artWorkWinPage1 = `
-  <img src="./img/Composition II in Red, Blue and Yellow - Mondrian.jpeg" alt="Composition II in Red, Blue and Yellow - Mondrian">
+  <img src="img/Composition II in Red, Blue and Yellow - Mondrian.jpeg" alt="Composition II in Red, Blue and Yellow - Mondrian">
   <h1 id = "title-win-page">Composition II in <font color="#DE271D">Red</font>, <font color="#015CA0">Blue</font> and <font color="#ECDB6B">Yellow</font> - 1930</h1>
   <p id="description-win-page">Mondrian was born in 1872 in Netherlands, and died in 1944 in New York. <br> He developed a new concept of abstraction, <strong>neoplasticism</strong>, a movement focused on <strong>reducing art to its minimum expression</strong>, using only the <strong>primary colors red, blue, white, yellow and black</strong>, and geometric forms. Uno de los objetivos de su obra neoplastica, era aspirar a una pintura no sentimental, no subjetiva e independiente de cualquier contingencia histórica, cultural o geográfica.</p>`;
 //Win Page Image level 2
 const artWorkWinPage2 = `
-  <img src="./img/Composition in Red, Yellow, blue and black - Mondrian.jpg" alt="Composition II in Red, Blue and Yellow - Mondrian">
-  <h1 id = "title-win-page">Composition en <font color="#DE271D">Rouge</font>, <font color="#ECDB6B">Jaune</font>, <font color="#000000">Bleu</font>, <font color="#ECDB6B">Noir</font> - 1921</h1>
+  <img src="img/Composition in Red, Yellow, blue and black - Mondrian.jpg" alt="Composition II in Red, Blue and Yellow - Mondrian">
+  <h1 id = "title-win-page">Composition en <font color="#DE271D">Rouge</font>, <font color="#ECDB6B">Jaune</font>, <font color="#015CA0">Bleu</font>, <font color="#000000">Noir</font> - 1921</h1>
   <p id="description-win-page">Mondrian,junto con otros artistas abstractos, crearon el movimiento artístico De Stijl, donde se centralizaron los estilos del Neoplasticismo de Mondrian. De esta forma su concepto se podría utilizar como herramienta para aplicarlo en la arquitectura o cualquier disciplina artística. Como por ejemplo La Casa Schröder (1924), una casa Patrimonio de la Unesco inspirada en la obra de Mondrian. </p>`;
 // HTML selectors
 ////////Start Page
