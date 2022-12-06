@@ -38,14 +38,13 @@ window.onload = function () {
   function changeSquareColor(game) {
     document.querySelectorAll(`.grid${game.level} div`).forEach((elem) => {
       elem.addEventListener("click", () => {
-        let getcolor = game.pickedColors.pop();
-        let getClass = game.pickedColorClass[0];
+        let getcolor = game.pickedColors[game.pickedColors.length - 1];
+        console.log(game.pickedColors);
+        console.log(game.pickedColorClass);
+        let getClass = game.pickedColorClass[game.pickedColorClass.length - 1];
         elem.style.background = `${getcolor}`;
         elem.classList.replace(elem.classList[0], `${getClass}`)
-        game.pickedColors = [];
-        game.pickedColorClass = [];
-      });
-      
+      }); 
     });
   };
   let resultCompareArtWorks = null;
@@ -57,6 +56,7 @@ window.onload = function () {
       for (let i = 0; i < rigthResultLength.length; i++) {
         let userAswerFirst = document.getElementById(`a${i}`);
         game.userAnswer.push(userAswerFirst.classList.value);
+        console.log(game.userAnswer);
       };
       gamePage.style = "display: none";
       resultCompareArtWorks = game.compareArtWorks();
