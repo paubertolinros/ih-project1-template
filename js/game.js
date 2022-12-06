@@ -11,8 +11,6 @@ class Game{
     this.level = level;
     this.hints = hints;
     this.winPageInfo = winPageInfo;
-    console.log(this.pickedColorClass)
-    console.log(this.pickedColors)
   };
   _restSeconds() {
     this.seconds--; 

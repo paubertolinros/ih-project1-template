@@ -464,7 +464,7 @@ strong {
 #instructions {
   background-color: #ECDB6B;
   width: 300px;
-  height: 200px;
+  height: 250px;
   position: absolute;
   left: 140px;
   color: #000;
@@ -774,140 +774,249 @@ width: 70rem;
   transform: translateY(1px);
 }
 
-/*-----------Grid2 to Play-----------*/
+/*-----------Grid3 to Play-----------*/
 
 .grid-Two{
 box-sizing: border-box;
 }
 
-.grid2 {
+.grid3 {
   display: grid;
   grid-template-columns: repeat(5, 70px) 90px 90px 30px; 
   grid-template-rows: 30px repeat(5, 70px) 70px 65px 35px; 
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5)
 }
 
-.grid2 > div {
+.grid3 > div {
   border: 0.5vw solid black;
   background-size: cover;
 }
 
-.grid2 div#a0 {
+.grid3 div#a0 {
   grid-column: span 2;
   background-color: #ffffff;
   border-top: none;
   border-left: none;
 }
 
-.grid2 div#a1 {
+.grid3 div#a1 {
   grid-column: span 3;
   background-color: #ffffff;
   border-top: none;
 }
 
-.grid2 div#a2 {
+.grid3 div#a2 {
   grid-column: span 2;
   background-color: #ffffff;
   border-top: none;
 }
 
-.grid2 div#a3 {
+.grid3 div#a3 {
   grid-row: span 6;
   background-color: #ffffff;
   border-top: none;
   border-right: none;
 }
 
-.grid2 div#a4 {
+.grid3 div#a4 {
   grid-row: span 2;
   background-color: #ffffff;
   border-left: none;
 }
 
-.grid2 div#a5 {
+.grid3 div#a5 {
   grid-column: span 4;
   grid-row: span 4;
   background-color: #ffffff;
 }
 
-.grid2 div#a6 {
+.grid3 div#a6 {
   grid-row: span 2;
   grid-column: span 2;
   background-color: #ffffff;
 }
 
-.grid2 div#a7 {
+.grid3 div#a7 {
   grid-row: span 3;
   background-color: #ffffff;
   border-left: none;
 }
 
-.grid2 div#a8 {
+.grid3 div#a8 {
   grid-row: span 2;
   background-color: #ffffff;
 }
 
-.grid2 div#a9 {
+.grid3 div#a9 {
   grid-row: span 2;
   background-color: #ffffff;
 }
 
-.grid2 div#a10 {
+.grid3 div#a10 {
   grid-row: span 2;
   grid-column: span 2;
   background-color: #ffffff;
 }
 
-.grid2 div#a11 {
+.grid3 div#a11 {
   grid-column: span 2;
   background-color: #ffffff;
 }
 
-.grid2 div#a12 {
+.grid3 div#a12 {
   grid-column: span 2;
   background-color: #ffffff;
 }
 
-.grid2 div#a13 {
+.grid3 div#a13 {
   grid-row: span 3;
   background-color: #ffffff;
   border-left: none;
   border-bottom: none;
 }
 
-.grid2 div#a14 {
+.grid3 div#a14 {
   grid-column: span 2;
   background-color: #ffffff;
 }
 
-.grid2 div#a15 {
+.grid3 div#a15 {
   grid-row: span 2;
   grid-column: span 2;
   background-color: #ffffff;
 }
 
-.grid2 div#a16 {
+.grid3 div#a16 {
   grid-row: span 3;
   background-color: #ffffff;
   border-bottom: none;
   border-right: none;
 }
 
-.grid2 div#a17 {
+.grid3 div#a17 {
   grid-column: span 2;
   grid-row: span 2;
   background-color: #ffffff;
   border-bottom: none;
 }
 
-.grid2 div#a18 {
+.grid3 div#a18 {
   grid-column: span 2;
   background-color: #ffffff;
 }
 
-.grid2 div#a19 {
+.grid3 div#a19 {
   grid-column: span 4;
   background-color: #ffffff;
   border-bottom: none;
+}
+
+/*-----------Grid2 to Play-----------*/
+.grid2 {
+  width: 530px;
+  height: 600px;
+  display: grid;
+  grid-template-rows: 50px 130px 260px 40px 40px;
+  grid-template-columns: 50px 150px 160px 110px 110px;
+  grid-gap: 20px 20px;
+  background-color: black;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+
+}
+
+.grid2>div {
+  background-color: white;
+  font-size: 2rem;
+  font-family: Arial, sans-serif;
+}
+
+.grid2 div#a0 {
+  grid-row: 1/2;
+  grid-column: 1/3;
+  background-color: #ffffff;
+  transition: all 0.1s ease 0s;
+  outline: none;
+  cursor: pointer;
+}
+
+.grid2 div#a1 {
+  grid-row: 2/3;
+  grid-column: 1/3;
+  background-color: #ffffff;
+  transition: all 0.1s ease 0s;
+  outline: none;
+  cursor: pointer;
+}
+
+.grid2 div#a2 {
+  grid-row: 3/5;
+  grid-column: 1/2;
+  background-color: #ffffff;
+  transition: all 0.1s ease 0s;
+  outline: none;
+  cursor: pointer;
+}
+
+.grid2 div#a3 {
+  grid-row: 5/6;
+  grid-column: 1/3;
+  background-color: #ffffff;
+  transition: all 0.1s ease 0s;
+  outline: none;
+  cursor: pointer;
+}
+
+.grid2 div#a4 {
+  grid-row: 1/3;
+  grid-column: 3/4;
+  background-color: #ffffff;
+  transition: all 0.1s ease 0s;
+  outline: none;
+  cursor: pointer;
+}
+
+.grid2 div#a5 {
+  grid-row: 1/3;
+  grid-column: 4/4;
+  background-color: #ffffff;
+  transition: all 0.1s ease 0s;
+  outline: none;
+  cursor: pointer;
+}
+
+.grid2 div#a6 {
+  grid-row: 3/5;
+  grid-column: 2/3;
+  background-color: #ffffff;
+  transition: all 0.1s ease 0s;
+  outline: none;
+  cursor: pointer;
+}
+
+.grid2 div#a7 {
+  grid-row: 3/4;
+  grid-column: 3/4;
+  background-color: #ffffff;
+  transition: all 0.1s ease 0s;
+  outline: none;
+  cursor: pointer;
+}
+
+.grid2 div#a8 {
+  grid-row: 3/4;
+  grid-column: 4/5;
+  background-color: #ffffff;
+  transition: all 0.1s ease 0s;
+  outline: none;
+  cursor: pointer;
+}
+
+.grid2 div#a9 {
+  grid-row: 4/6;
+  grid-column: 3/5;
+  background-color: #ffffff;
+  transition: all 0.1s ease 0s;
+  outline: none;
+  cursor: pointer;
 }
 
