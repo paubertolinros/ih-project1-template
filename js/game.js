@@ -22,11 +22,10 @@ class Game{
   _printResetCorrectSeconds(){
     getSeconds.textContent = this.seconds;
   };
-  printArtWorkImage() {
-    const artWorkImage = document.getElementById("artwork-image");
+  _printArtWorkImage() {
     artWorkImage.src=this.correctImage;
   };
-  printArtWorkAndColors() {
+  _printArtWorkAndColors() {
     newArtWork.innerHTML = this.gridAndColorsOptions;
     const getDiv = document.getElementById("ArtworkGrid");
     getDiv.classList.add(`grid${this.level}`);
@@ -35,13 +34,13 @@ class Game{
   _printHints() {
     getHintsContainer.innerHTML = this.hints;
   };
-  compareArtWorks() {
+  _compareArtWorks() {
     let getRealResult =  Object.values(this.rigthResult)
     for (let i = 0; i < getRealResult.length; i++){
       if (this.userAnswer[i] === getRealResult[i]) {
         winPage.style = "display: flex";
         losePage.style = "display: none";
-        this.printWinPage();
+        this._printWinPage();
       } else if (this.userAnswer[i] !== getRealResult[i]){
         losePage.style = "display: flex";
         winPage.style = "display: none";
@@ -49,12 +48,8 @@ class Game{
       };
     };
   };
-  cleanAll() {
-    this.userAnswer = [];
-    this.level = 1;
-    this.printArtWorkAndColors();
-  };
-  changeSecondColor() {
+ //function > change seconds color 
+  _changeSecondColor() {
     switch (this.seconds) {
       case 14:
         getSeconds.style.color = "#015CA0";
@@ -106,7 +101,7 @@ class Game{
         break;    
     };
   };
-  printWinPage() {
+  _printWinPage() {
     artWorkWinPage.innerHTML = this.winPageInfo;
   };
 };

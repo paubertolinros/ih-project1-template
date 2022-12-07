@@ -27,12 +27,10 @@ strong {
 .shown {
   display: flex;
 }
-
-/*-----------Basic styles, change according to your style-----------*/
 /*-----------Start Page-----------*/
 #start-page {
-  height: 100vh;
   display: flex;
+  height: 100vh;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -277,7 +275,7 @@ strong {
   margin-top: 10px;
 }
 .art-work {
-  margin-top: 70px;
+  margin-top: 35px;
 }
 
 /*-----------Game Page - Color-buttons-----------*/
@@ -574,12 +572,12 @@ height: 25rem;
 /*-----------Win Page-----------*/
 
 #win-page {
-  height: 100vh;
   display: none;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   text-align: center;
+  min-height: 100vh;
 }
 
 #win-page div main h1.win-message {
@@ -608,7 +606,7 @@ height: 25rem;
 #description-win-page {
   font-size: 1.2rem;
   line-height: 25px;
-  margin: 0 45rem;
+  margin: 0 25rem;
 }
 
 .buttons-win-page {

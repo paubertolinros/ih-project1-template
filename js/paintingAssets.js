@@ -164,6 +164,7 @@ const startButton = document.getElementById('start');
 ////////Show ArtWork Page
 const artWorkPage = document.getElementById('artwork-page');
 const getSeconds = document.getElementById('seconds');
+const artWorkImage = document.getElementById("artwork-image");
 ////////Game Page
 const gamePage = document.getElementById('game-page');
 const finishButton = document.getElementById('check-button');

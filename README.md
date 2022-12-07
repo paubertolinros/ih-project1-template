@@ -5,7 +5,7 @@
 
 ## Description
 
- The game was born with the aim of bringing the world of art closer to the children, and what better way to do it than through their favorite language? the game! So, Mondrian's Dream is a small step for the little ones to have a first contact with one of the mythical works of this Dutch artist, Piet Mondrian.
+The game was born with the aim of bringing the world of art closer to the children, and what better way to do it than through their favorite language? the game! So, Mondrian's Dream is a small step for the little ones to have a first contact with one of the mythical works of this Dutch artist, Piet Mondrian.
 
 ## User stories MVP
 
@@ -26,12 +26,14 @@ Minimum user stories:
 
 ## File structure
 
-- <code>game.js</code>: contains all the elements for the game to work. Methods: start(), \_update()
-- <code>scripts.js</code>: contains all the DOM manipulation code to start the game
+- <code>game.js</code>: contains all the elements for the game to work. Methods ans som DOM manipulation.
+- <code>paintingAssets.js</code>: contains all the selectors (HTML elements).
+- <code>sound.js</code>: contains click squares sound.
+- <code>scripts.js</code>: contains all the DOM manipulation code to start the game and functions.
 
 ## Useful links
 
 <!-- When you finish, add these links and commit -->
 
-- [Presentation slides]()
+- [Presentation slides](https://slides.com/paulabertolinros/palette/fullscreen)
 - [Deployed game]()
