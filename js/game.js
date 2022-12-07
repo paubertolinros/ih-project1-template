@@ -10,7 +10,7 @@ class Game{
     this.intervalId = null;
     this.level = level;
     this.hints = hints;
-    this.sound = new sound("./sounds/click-mondrians-game-short.wav");
+    this.sound = new sound("./sound/click-mondrians-game-short.wav");
     this.winPageInfo = winPageInfo;
   };
   _restSeconds() {
