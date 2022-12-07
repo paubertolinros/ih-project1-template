@@ -1,14 +1,10 @@
 # Mondrian's Dream
 
-<!-- When you finish, add a nice screenshot of your game -->
-<!--[<img src="./img/page.png">]()-->
 ![](/img/Mondrians-Game-Start-Page.png)
 
 ## Description
 
 The game was born with the aim of bringing the world of art closer to the children, and what better way to do it than through their favorite language? the game! So, Mondrian's Dream is a small step for the little ones to have a first contact with one of the mythical works of this Dutch artist, Piet Mondrian.
-
-![](/img/Mondrians-Game-Start-Page.png)
 
 ## User stories MVP
 
