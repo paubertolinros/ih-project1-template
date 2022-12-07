@@ -21,7 +21,7 @@ window.onload = function () {
     renderEverything(game);
   };
   startButton.onclick = () => {
-    startGame(gridAndColorsOne, painting1Solution, 1, "./img/Composition II in Red, Blue and Yellow - Mondrian.jpeg", artWorkWinPage1, 1, hintsLevel1);
+    startGame(gridAndColorsOne, painting1Solution, 1, "./img/Composition II in Red, Blue and Yellow - Mondrian.jpeg", artWorkWinPage1, 7, hintsLevel1);
   };
   //function > take the color of color buttons
   function colorButtons(game) {
@@ -69,9 +69,9 @@ window.onload = function () {
     };
     nextLevelButton.onclick = () => {
       if (game.level === 1) {
-        startGame(gridAndColorsTwo, painting2Solution, 2, "./img/Composition 1921.jpg", artWorkWinPage2, 2, hintsLevel2);
+        startGame(gridAndColorsTwo, painting2Solution, 2, "./img/Composition 1921.jpg", artWorkWinPage2, 8, hintsLevel2);
       } if (game.level === 2) {
-        startGame(gridAndColorsThree, painting3Solution, 3, "./img/Composition in Red, Yellow, blue and black - Mondrian.jpg", artWorkWinPage3, 3, hintsLevel3);
+        startGame(gridAndColorsThree, painting3Solution, 3, "./img/Composition in Red, Yellow, blue and black - Mondrian.jpg", artWorkWinPage3, 14, hintsLevel3);
       }
     };
   };
@@ -89,11 +89,11 @@ window.onload = function () {
   function tryAgainButton(game) {
     tryAgain.onclick = function () {
       if (game.level === 1) {
-        startGame(gridAndColorsOne, painting1Solution, 1, "./img/Composition II in Red, Blue and Yellow - Mondrian.jpeg", artWorkWinPage1, 1, hintsLevel1);
+        startGame(gridAndColorsOne, painting1Solution, 1, "./img/Composition II in Red, Blue and Yellow - Mondrian.jpeg", artWorkWinPage1, 7, hintsLevel1);
       } if (game.level === 2) {
-        startGame(gridAndColorsTwo, painting2Solution, 2, "./img/Composition 1921.jpg", artWorkWinPage2, 2, hintsLevel2);
+        startGame(gridAndColorsTwo, painting2Solution, 2, "./img/Composition 1921.jpg", artWorkWinPage2, 8, hintsLevel2);
       } if (game.level === 3) {
-        startGame(gridAndColorsThree, painting3Solution, 3, "./img/Composition in Red, Yellow, blue and black - Mondrian.jpg", artWorkWinPage3, 3, hintsLevel3);
+        startGame(gridAndColorsThree, painting3Solution, 3, "./img/Composition in Red, Yellow, blue and black - Mondrian.jpg", artWorkWinPage3, 14, hintsLevel3);
       };
     };   
   };
