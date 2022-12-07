@@ -23,7 +23,7 @@ window.onload = function () {
   };
   //codi que no acabo d'entendre
   startButton.onclick = () => {
-    startGame(gridAndColorsOne, painting1Solution, 1, "./img/Composition II in Red, Blue and Yellow - Mondrian.jpeg", artWorkWinPage1, 7, hintsLevel1);
+    startGame(gridAndColorsOne, painting1Solution, 1, "./img/Composition II in Red, Blue and Yellow - Mondrian.jpeg", artWorkWinPage1, 1, hintsLevel1);
   };
   function colorButtons(game) {
     document.querySelectorAll(".palette-colors button").forEach((elem) => {
@@ -38,8 +38,6 @@ window.onload = function () {
       elem.addEventListener("click", () => {
         game.sound.play();
         let getcolor = game.pickedColors[game.pickedColors.length - 1];
-        console.log(game.pickedColors);
-        console.log(game.pickedColorClass);
         let getClass = game.pickedColorClass[game.pickedColorClass.length - 1];
         elem.style.background = `${getcolor}`;
         elem.classList.replace(elem.classList[0], `${getClass}`)
@@ -55,7 +53,6 @@ window.onload = function () {
       for (let i = 0; i < rigthResultLength.length; i++) {
         let userAswerFirst = document.getElementById(`a${i}`);
         game.userAnswer.push(userAswerFirst.classList.value);
-        console.log(game.userAnswer);
       };
       gamePage.style = "display: none";
       resultCompareArtWorks = game.compareArtWorks();

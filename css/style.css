@@ -52,7 +52,7 @@ strong {
   width: 70rem;
 }
 
-#start-page main h1.rainbow-letters {
+#start-page main h1 {
   font-size: 6rem;
   text-transform: uppercase;
   letter-spacing: 18px;
@@ -560,8 +560,9 @@ height: 25rem;
 
 #lose-page main h1 {
   font-size: 2.3rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   padding-bottom: 20px;
+  line-height: 4rem;
 }
 
 #lose-page main .buttons-lose-page {
@@ -580,13 +581,11 @@ height: 25rem;
   flex-direction: column;
   text-align: center;
 }
-#win-page div main {
-  padding: 0 300px
-}
 
 #win-page div main h1.win-message {
   font-size: 1.7rem;
   margin-bottom: 2rem;
+  line-height: 2.1rem;
 }
 
 #show-Artwork-description {
@@ -602,9 +601,14 @@ height: 25rem;
   width: 450px;
 }
 
+#win-page #title-win-page {
+  padding: 0 30rem;
+}
+
 #description-win-page {
   font-size: 1.2rem;
   line-height: 25px;
+  margin: 0 45rem;
 }
 
 .buttons-win-page {
