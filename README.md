@@ -36,4 +36,4 @@ Minimum user stories:
 <!-- When you finish, add these links and commit -->
 
 - [Presentation slides](https://slides.com/paulabertolinros/palette/fullscreen)
-- [Deployed game]()
+- [Deployed game](https://paubertolinros.github.io/mondrians-dream/)
