@@ -1,52 +1,52 @@
 // ArtWork level 1
 let gridAndColorsOne = `
   <div id ="ArtworkGrid" >
-    <div id="a0" class = "white">a</div>
-    <div id="a1" class = "white">b</div>
-    <div id="a2" class = "white">c</div>
-    <div id="a3" class = "white">d</div>
-    <div id="a4" class = "white">e</div>
-    <div id="a5" class = "white">f</div>
-    <div id="a6" class = "white">g</div>
+    <div id="a0" class = "white"></div>
+    <div id="a1" class = "white"></div>
+    <div id="a2" class = "white"></div>
+    <div id="a3" class = "white"></div>
+    <div id="a4" class = "white"></div>
+    <div id="a5" class = "white"></div>
+    <div id="a6" class = "white"></div>
   </div>`;
 // ArtWork level 2
 let gridAndColorsTwo = `
 <div id = "ArtworkGrid">
-      <div id="a0" class="white">a0</div>
-      <div id="a1" class="white">a1</div>
-      <div id="a2" class="white">a2</div>
-      <div id="a3" class="white">a3</div>
-      <div id="a4" class="white">a4</div>
-      <div id="a5" class="white">a5</div>
-      <div id="a6" class="white">a6</div>
-      <div id="a7" class="white">a7</div>
-      <div id="a8" class="white">a8</div>
-      <div id="a9" class="white">a9</div>
+      <div id="a0" class="white"></div>
+      <div id="a1" class="white"></div>
+      <div id="a2" class="white"></div>
+      <div id="a3" class="white"></div>
+      <div id="a4" class="white"></div>
+      <div id="a5" class="white"></div>
+      <div id="a6" class="white"></div>
+      <div id="a7" class="white"></div>
+      <div id="a8" class="white"></div>
+      <div id="a9" class="white"></div>
       </div>
 `
 // Artwork level 3
 let gridAndColorsThree = `
   <div id = "ArtworkGrid" >
-    <div id="a0" class="white">a0</div>
-    <div id="a1" class="white">a1</div>
-    <div id="a2" class="white">a2</div>
-    <div id="a3" class="white">a3</div>
-    <div id="a4" class="white">a4</div>
-    <div id="a5" class="white">a5</div>
-    <div id="a6" class="white">a6</div>
-    <div id="a7" class="white">a7</div>
-    <div id="a8" class="white">a8</div>
-    <div id="a9" class="white">a9</div>
-    <div id="a10" class="white">a10</div>
-    <div id="a11" class="white">a11</div>
-    <div id="a12" class="white">a12</div>
-    <div id="a13" class="white">a13</div>
-    <div id="a14" class="white">a14</div>
-    <div id="a15" class="white">a15</div>
-    <div id="a16" class="white">a16</div>
-    <div id="a17" class="white">a17</div>
-    <div id="a18" class="white">a18</div>
-    <div id="a19" class="white">a19</div>
+    <div id="a0" class="white"></div>
+    <div id="a1" class="white"></div>
+    <div id="a2" class="white"></div>
+    <div id="a3" class="white"></div>
+    <div id="a4" class="white"></div>
+    <div id="a5" class="white"></div>
+    <div id="a6" class="white"></div>
+    <div id="a7" class="white"></div>
+    <div id="a8" class="white"></div>
+    <div id="a9" class="white"></div>
+    <div id="a10" class="white"></div>
+    <div id="a11" class="white"></div>
+    <div id="a12" class="white"></div>
+    <div id="a13" class="white"></div>
+    <div id="a14" class="white"></div>
+    <div id="a15" class="white"></div>
+    <div id="a16" class="white"></div>
+    <div id="a17" class="white"></div>
+    <div id="a18" class="white"></div>
+    <div id="a19" class="white"></div>
   </div>`;
 // Result Artwork 1
 const painting1Solution = {
@@ -146,17 +146,17 @@ let colorsForPaint = `
 const artWorkWinPage1 = `
   <img src="img/Composition II in Red, Blue and Yellow - Mondrian.jpeg" alt="Composition II in Red, Blue and Yellow - Mondrian">
   <h1 id = "title-win-page">Composition II in <font color="#DE271D">Red</font>, <font color="#015CA0">Blue</font> and <font color="#ECDB6B">Yellow</font> - 1930</h1>
-  <p id="description-win-page">Mondrian was born in 1872 in Netherlands, and died in 1944 in New York. <br> He developed a new concept of abstraction, <strong>neoplasticism</strong>, a movement focused on <strong>reducing art to its minimum expression</strong>, using only the <strong>primary colors red, blue, white, yellow and black</strong>, and geometric forms. .</p>`;
+  <p id="description-win-page"> <strong>Mondrian</strong> was born in 1872 in the Netherlands and died in 1944 in New York.<br>He developed a new concept of abstraction called <strong>Neoplasticism</strong>, a movement focused on reducing <strong>art to its minimum expression</strong> by only using the primary colors <strong>red, blue, white, yellow and black<strong>, and geometric forms.</p>`;
 //Win Page Image level 2
 const artWorkWinPage2 = `
   <img src="img/Composition 1921.jpg" alt="Composition 1921 - Mondrian">
   <h1 id = "title-win-page">Composition <font color="#DE271D">1</font><font color="#ECDB6B">9</font><font color="#015CA0">2</font><font color="#000000">1</font></h1>
-  <p id="description-win-page">Uno de los objetivos de la obra neoplástica de Mondrian, era aspirar a una pintura no sentimental, no subjetiva e independiente de cualquier contingencia histórica, cultural o geográfica. </p>`;
+  <p id="description-win-page">One of Mondrian's <strong>neoplastic art goals</strong> was to try to <strong>escape</strong> from <strong>sentimental</strong>, <strong>non subjective</strong> art, <strong>detaching</strong> it from any <strong>historical, cultural or geographical</strong> contingencies.</p>`;
 //Win Page Image level 3
 const artWorkWinPage3 = `
   <img src="img/Composition in Red, Yellow, blue and black - Mondrian.jpg" alt="in Red, Yellow, blue and black - Mondrian">
   <h1 id = "title-win-page">Composition en <font color="#DE271D">Rouge</font>, <font color="#ECDB6B">Jaune</font>, <font color="#015CA0">Bleu</font>, <font color="#000000">Noir</font> - 1921</h1>
-  <p id="description-win-page">Mondrian,junto con otros artistas abstractos, crearon el movimiento artístico De Stijl, donde se centralizaron los estilos del Neoplasticismo de Mondrian. De esta forma su concepto se podría utilizar como herramienta para aplicarlo en la arquitectura o cualquier disciplina artística. Como por ejemplo La Casa Schröder (1924), una casa Patrimonio de la Unesco inspirada en la obra de Mondrian. </p>`;
+  <p id="description-win-page"><strong>Mondrian</strong>, together with many other abstract artists, created the <strong><em>De Stijl</em></strong> movement one of which's main objectives was to <strong>facilitate the enforcement of Neoplasticism</strong> into <strong>architecture</strong> and/or any <strong>other artistic</strong> disciplines. As an example, there's the <strong>Schröder House</strong> (1924), which was inspired by Mondrian's neoplastic style and was designated by UNESCO as a World Heritage Site in 2000.</p>`;
 // HTML selectors
 ////////Start Page
 const startPage = document.getElementById('start-page');

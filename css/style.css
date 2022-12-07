@@ -52,7 +52,6 @@ strong {
   width: 70rem;
 }
 
-
 #start-page main h1.rainbow-letters {
   font-size: 6rem;
   text-transform: uppercase;
@@ -123,76 +122,17 @@ strong {
 }
 #start-page main div.ins-and-desc div.instructions {
   display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #DE271D #ECDB6B;
   width: 60rem;
 }
 
-#start-page main div.ins-and-desc div.instructions p.ins {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+#start-page main div.ins-and-desc div.instructions p.ins { 
   font-size: 1.2rem;
   line-height: 25px;
   color:black; 
 }
-/*
-#start-page main button {
-  background-color: #DE271D;
-  color: #fff;
-  border: none;
-  border: 1px solid rgb(23, 72, 163);
-  padding: 1rem 2.5rem;
-  margin-top: 2.1rem;
-  margin-bottom: 2.1rem;
-  cursor: pointer;
-}
-
-#start-page main button {
-  text-decoration: none;
-  border: none;
-  color: #fff;
-  text-align: center;
-  background: linear-gradient(90deg,  #ECDB6B, #DE271D, #015CA0,#aaaaaa,#ECDB6B);
-  background-size: 300%;
-  border-radius: 20px;
-  z-index: 1;
-}
-
-#start-page main button:hover {
-  animation: ani 8s linear infinite;
-  border: none;
-}
-
-@keyframes ani {
-  0% {
-    background-position: 0%;
-  }
-
-  100% {
-    background-position: 400%;
-  }
-}
-
-#start-page main button:before {
-  content: '';
-  top: -5px;
-  left: -5px;
-  right: -5px;
-  bottom: -5px;
-  z-index: -1;
-  background: linear-gradient(90deg, #ECDB6B, #DE271D,#015CA0, #aaaaaa,#ECDB6B);
-  background-size: 400%;
-  border-radius: 35px;
-  transition: 1s;
-}
-
-#start-page main button:hover::before {
-  filter: blur(20px);
-}
-
-#start-page main button:active {
-  background: linear-gradient(32deg, #015CA0, #ECDB6B,#DE271D,#aaaaaa);
-}*/
 
 #start-page main button {
   background-color: #DE271D;
@@ -209,10 +149,11 @@ strong {
   color:rgb(23, 72, 163);
 }
 
-
 /*-----------Artwork Seconds Page-----------*/
 #artwork-page {
   justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .artwork-page-seconds {
@@ -225,12 +166,13 @@ strong {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 60px;
+  
 }
 
 .artwork-page-seconds h3{
   font-size: 2rem;
   display: flex;
+  padding-bottom: 20px;
 }
 
 .artwork-page-seconds img {
@@ -303,11 +245,11 @@ strong {
   display: none;
 }
 
-
-
 /*-----------Game Page -----------*/
 #game-page{
   justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 .game-page-css{
   display: flex;
@@ -332,24 +274,24 @@ strong {
 }
 .game-page-css main h1 {
   font-size: 2rem;
-  margin-top: 50px;
+  margin-top: 10px;
 }
 .art-work {
-  margin-top: 35px;
+  margin-top: 70px;
 }
 
 /*-----------Game Page - Color-buttons-----------*/
 .paint-colors {
-  margin-top: 30px;
+  margin-top: 50px;
   display: flex;
   justify-content: center;
 }
 
 .palette-colors{
   display: flex;
-  gap: 20px;
-  
+  gap: 20px; 
 }
+
 .palette-colors .blue {
   background-color: #015CA0;
   color: #fff;
@@ -472,7 +414,7 @@ strong {
   width: 300px;
   height: 250px;
   position: absolute;
-  left: 0px;
+  left: -120px;
   color: #000;
   cursor: pointer;
 }
@@ -496,10 +438,8 @@ strong {
 }
 .left img {
   width: 70px;
-  position: relative;
   cursor: pointer;
 }
-
 .left{
   position: relative;
 }
@@ -510,7 +450,7 @@ background-color: white;
  width: 250px;
  height: 250px;
  position: absolute;
- right: 160px;
+ right: -120px;
  color: #000;
  cursor: pointer;
  display: none;
@@ -557,15 +497,17 @@ background-color: white;
 .rigth img {
   width: 70px;
   cursor: pointer;
-  position: relative;
 }
 
+.rigth {
+  position: relative;
+}
 
 /*-----------Check Button I'm done-----------*/
 .finish-button{
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 60px;
 }
 #check-button {
   background-color: #ECDB6B;
@@ -596,6 +538,8 @@ background-color: white;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 100vh;
+  align-items: center;
 }
 #lose-page div {
   display: flex;
@@ -610,13 +554,14 @@ justify-content: center;
 align-items: center;
 padding-top: 1rem;
 background-color: #f9f5f2;
-margin: 18rem 0;
 width: 70rem;
+height: 25rem;
 }
 
 #lose-page main h1 {
   font-size: 2.3rem;
   margin-bottom: 3rem;
+  padding-bottom: 20px;
 }
 
 #lose-page main .buttons-lose-page {
@@ -640,7 +585,7 @@ width: 70rem;
 }
 
 #win-page div main h1.win-message {
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   margin-bottom: 2rem;
 }
 

@@ -1,7 +1,5 @@
 // això és el mateix que posar window.addEventListener("load", (event) => {})
 window.onload = function () {
-  //Codi que no acabo d'entendre, perquè haig de posar el de la línia d'abaix i no directament 
-  //especificar como ho faig a la línia 28
   function startGame(grid, solutions, level, image, winPage, int, hints) {
     let game = new Game(grid, solutions, level, image, winPage, int, hints);
     game.printArtWorkImage();
@@ -38,6 +36,7 @@ window.onload = function () {
   function changeSquareColor(game) {
     document.querySelectorAll(`.grid${game.level} div`).forEach((elem) => {
       elem.addEventListener("click", () => {
+        game.sound.play();
         let getcolor = game.pickedColors[game.pickedColors.length - 1];
         console.log(game.pickedColors);
         console.log(game.pickedColorClass);
@@ -117,7 +116,7 @@ window.onload = function () {
       countClicks++;
       setTimeout(() => {
         getHintsContainer.style = "display: none";
-      }, 5000)
+      }, 7000)
       if (countClicks > 3) {
         getHintsContainer.style = "display: none";
       } else {
@@ -125,13 +124,6 @@ window.onload = function () {
       };
     };
   };
-  /*function hintLevel2(game) {
-    if (game.level === 2) {
-      setTimeout(() => {
-        document.querySelector(".grid2").onmouseenter = () =>
-      },5000)
-    }
-  }*/
   function renderEverything(game, level) {
     changeSquareColor(game);
     colorButtons(game, level);
