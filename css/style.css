@@ -40,6 +40,7 @@ strong {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 #start-page main {
   display: flex;
   flex-direction: column;
@@ -95,21 +96,27 @@ strong {
 .rainbow-letters span:nth-child(10n + 10) {
   color: #000000;
 }
+
 .rainbow-letters span:nth-child(10n + 11) {
   color: #015CA0;
 }
+
 .rainbow-letters span:nth-child(10n + 12) {
   color: #015CA0;
 }
+
 .rainbow-letters span:nth-child(10n + 13) {
   color: #DE271D;
 }
+
 .rainbow-letters span:nth-child(10n + 14) {
   color: #ECDB6B;
 }
+
 .rainbow-letters span:nth-child(10n + 15) {
   color: #000000;
 }
+
 .rainbow-letters span:nth-child(10n + 16) {
   color: #aaaaaa;
 }
@@ -118,6 +125,7 @@ strong {
   display: flex;
   margin-top: 2.5rem;
 }
+
 #start-page main div.ins-and-desc div.instructions {
   display: flex;
   justify-content: center;
@@ -163,8 +171,7 @@ strong {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  
+  align-items: center; 
 }
 
 .artwork-page-seconds h3{
@@ -195,6 +202,7 @@ strong {
   width: 10rem;
   padding: 1.5rem 0.9rem;
 }
+
 .try-again-button {
   background-color: #ECDB6B;
   color: #000;
@@ -249,31 +257,36 @@ strong {
   align-items: center;
   min-height: 100vh;
 }
+
 .game-page-css{
   display: flex;
   justify-content: space-evenly;
 }
+
 .game-page-css .left {
   display: flex;
   align-items: center;
-  margin-right: 200px;
-  
+  margin-right: 200px; 
 }
+
 .game-page-css .rigth {
   display: flex;
   align-items: center;
   margin-left: 200px;
 }
+
 .game-page-css main{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 .game-page-css main h1 {
   font-size: 2rem;
   margin-top: 10px;
 }
+
 .art-work {
   margin-top: 35px;
 }
@@ -323,12 +336,14 @@ strong {
   transition: all 0.1s ease 0s;
   outline: none;
 }
+
 .palette-colors .red:hover {
   background-color: #DE271D;
   box-shadow: 0px 15px 20px rgba(222, 39, 29, 0.4);
   color: #fff;
   transform: translateY(2px);
 }
+
 .palette-colors .yellow {
   background-color: #ECDB6B;
   color: #fff;
@@ -341,13 +356,14 @@ strong {
   transition: all 0.1s ease 0s;
   outline: none;
 }
+
 .palette-colors .yellow:hover{
   background-color: #ECDB6B;
   box-shadow: 0px 15px 20px rgb(236, 219, 107, 0.6);
   color: #fff;
   transform: translateY(2px);
-
 }
+
 .palette-colors .white {
   background-color: #ffffff;
   color: #000;
@@ -360,6 +376,7 @@ strong {
   transition: all 0.1s ease 0s;
   outline: none;
 }
+
 .palette-colors .white:hover{
   background-color: #ffffff;
   box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
@@ -379,6 +396,7 @@ strong {
   transition: all 0.1s ease 0s;
   outline: none;
 }
+
 .palette-colors .grey:hover {
   background-color: #aaaaaa;
   box-shadow: 0px 15px 20px rgb(170, 170, 170, 0.8);
@@ -430,14 +448,17 @@ strong {
   font-size: 1rem;
   font-weight: 500;
 }
+
 .strong-li{
   font-weight: 900;
   font-size: 1.3rem
 }
+
 .left img {
   width: 70px;
   cursor: pointer;
 }
+
 .left{
   position: relative;
 }
@@ -467,31 +488,39 @@ background-color: white;
   font-size: 1rem;
   font-weight: 500;
 }
+
 .strong-li-hints{
   font-weight: 900;
   font-size: 1.3rem;
 }
+
 .hints-number-size {
   font-size: 1.5rem;
   font-weight: 300;
 }
+
 .strong-li-hints.blue {
   color:#015CA0;
 }
+
 .strong-li-hints.yellow {
   color: #ECDB6B;
 }
+
 .strong-li-hints.red {
   color: #DE271D;
 }
+
 .strong-li-hints.grey {
   color: #aaaaaa;
 }
+
 .strong-li-hints.white {
   -webkit-text-stroke: 0.4px black;
   color: rgb(255, 255, 255);
   -webkit-font-smoothing: antialiased;
 }
+
 .rigth img {
   width: 70px;
   cursor: pointer;
@@ -507,6 +536,7 @@ background-color: white;
   justify-content: center;
   margin-top: 60px;
 }
+
 #check-button {
   background-color: #ECDB6B;
   color: #000;
@@ -519,6 +549,7 @@ background-color: white;
   cursor: pointer;
   outline: none;
 }
+
 #check-button:hover {
   background-color: #015CA0;
   color: #fff;
@@ -539,6 +570,7 @@ background-color: white;
   min-height: 100vh;
   align-items: center;
 }
+
 #lose-page div {
   display: flex;
   justify-content: center;  
@@ -897,7 +929,6 @@ box-sizing: border-box;
   grid-gap: 20px 20px;
   background-color: black;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
-
 }
 
 .grid2>div {
@@ -914,6 +945,7 @@ box-sizing: border-box;
   outline: none;
   cursor: pointer;
 }
+
 .grid2 div#a0:hover {
   box-shadow: 0px 10px 20px rgb(255, 255, 255, 0.4);
   transform: translateY(0.8px);
@@ -927,6 +959,7 @@ box-sizing: border-box;
   outline: none;
   cursor: pointer;
 }
+
 .grid2 div#a1:hover {
   box-shadow: 0px 10px 20px rgb(255, 255, 255, 0.4);
   transform: translateY(0.8px);
@@ -940,6 +973,7 @@ box-sizing: border-box;
   outline: none;
   cursor: pointer;
 }
+
 .grid2 div#a2:hover {
   box-shadow: 0px 10px 20px rgb(255, 255, 255, 0.4);
   transform: translateY(0.8px);
@@ -953,6 +987,7 @@ box-sizing: border-box;
   outline: none;
   cursor: pointer;
 }
+
 .grid2 div#a3:hover {
   box-shadow: 0px 10px 20px rgb(255, 255, 255, 0.4);
   transform: translateY(0.8px);
@@ -966,6 +1001,7 @@ box-sizing: border-box;
   outline: none;
   cursor: pointer;
 }
+
 .grid2 div#a4:hover {
   box-shadow: 0px 10px 20px rgb(255, 255, 255, 0.4);
   transform: translateY(0.8px);
@@ -979,6 +1015,7 @@ box-sizing: border-box;
   outline: none;
   cursor: pointer;
 }
+
 .grid2 div#a5:hover {
   box-shadow: 0px 10px 20px rgb(255, 255, 255, 0.4);
   transform: translateY(0.8px);
@@ -992,6 +1029,7 @@ box-sizing: border-box;
   outline: none;
   cursor: pointer;
 }
+
 .grid2 div#a6:hover {
   box-shadow: 0px 10px 20px rgb(255, 255, 255, 0.4);
   transform: translateY(0.8px);
@@ -1005,6 +1043,7 @@ box-sizing: border-box;
   outline: none;
   cursor: pointer;
 }
+
 .grid2 div#a7:hover {
   box-shadow: 0px 10px 20px rgb(255, 255, 255, 0.4);
   transform: translateY(0.8px);
@@ -1018,6 +1057,7 @@ box-sizing: border-box;
   outline: none;
   cursor: pointer;
 }
+
 .grid2 div#a8:hover {
   box-shadow: 0px 10px 20px rgb(255, 255, 255, 0.4);
   transform: translateY(0.8px);
@@ -1031,6 +1071,7 @@ box-sizing: border-box;
   outline: none;
   cursor: pointer;
 }
+
 .grid2 div#a9:hover {
   box-shadow: 0px 10px 20px rgb(255, 255, 255, 0.4);
   transform: translateY(0.8px);
