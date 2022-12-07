@@ -2,6 +2,7 @@
 
 <!-- When you finish, add a nice screenshot of your game -->
 <!--[<img src="./img/page.png">]()-->
+![](/img/Mondrians-Game-Start-Page.png)
 
 ## Description
 
@@ -35,5 +36,5 @@ Minimum user stories:
 
 <!-- When you finish, add these links and commit -->
 
-- [Presentation slides](https://slides.com/paulabertolinros/palette/fullscreen)
-- [Deployed game](https://paubertolinros.github.io/mondrians-dream/)
+- [Mondrian's Dream Game Slides](https://slides.com/paulabertolinros/palette/fullscreen)
+- [Mondrian's Dream Game](https://paubertolinros.github.io/mondrians-dream/)
