@@ -1,6 +1,6 @@
 # Mondrian's Dream
 
-![](/img/Mondrians-Game-Start-Page.png)
+![](/img/game-page-image.png)
 
 ## Description
 
