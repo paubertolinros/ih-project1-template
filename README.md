@@ -4,19 +4,22 @@
 
 ## Description
 
-The game was born with the aim of bringing the world of art closer to the children, and what better way to do it than through their favorite language? the game! So, Mondrian's Dream is a small step for the little ones to have a first contact with one of the mythical works of this Dutch artist, Piet Mondrian.
+
+This game was created with the objective of bringing the world of art closer to children, and what better way to do SO than through their favorite language? PLAY! Mondrian's Dream is conceived as a first step to help the little ones have a first contact with one of the mythical works of the Dutch artist, Piet Mondrian.
+Through play, children will not only learn about Piet Mondrian's art but will develop their memory and concentration skills as well.
+
 
 ## User stories MVP
 
 Minimum user stories:
 
-- user can see a start screen with instructions and an end screen when he wins/ loses.
-- user can see a drawing for 3 secs then it disappears.
-- user can see the template of the drawing without the colors, just the grid.
-- user can click on the square that he wants to paint and then on the colors.
-- when user finishes user can click on a "finish" button that checks if the color pattern is correct.
-- if color pattern is correct then user wins.
-- if color pattern is incorrect user loses.
+- User can see a start screen with instructions and an end screen when he wins/ loses.
+- User can see a drawing for 3 secs then it disappears.
+- User can see the template of the drawing without the colors, just the grid.
+- User can click on the square that he wants to paint and then on the colors.
+- When user finishes user can click on a "finish" button that checks if the color pattern is correct.
+- If color pattern is correct then user wins.
+- If color pattern is incorrect user loses.
 
 <img src ="./img/Mondrians-Game-Page.png">
 
