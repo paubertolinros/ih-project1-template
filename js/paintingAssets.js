@@ -156,7 +156,7 @@ const artWorkWinPage2 = `
 const artWorkWinPage3 = `
   <img src="img/Composition in Red, Yellow, blue and black - Mondrian.jpg" alt="in Red, Yellow, blue and black - Mondrian">
   <h1 id = "title-win-page">Composition en <font color="#DE271D">Rouge</font>, <font color="#ECDB6B">Jaune</font>, <font color="#015CA0">Bleu</font>, <font color="#000000">Noir</font> - 1921</h1>
-  <p id="description-win-page"><strong>Mondrian</strong>, together with many other abstract artists, created the <strong><em>De Stijl</em></strong> movement one of which's main objectives was to <strong>facilitate the enforcement of Neoplasticism</strong> into <strong>architecture</strong> and/or any <strong>other artistic</strong> disciplines. As an example, there's the <strong>Schröder House</strong> (1924), which was inspired by Mondrian's neoplastic style and was designated by UNESCO as a World Heritage Site in 2000.</p>`;
+  <p id="description-win-page"><strong>Mondrian</strong>, together with many other abstract artists, created the <strong><em>De Stijl</em></strong> movement. One of its main objectives was to <strong>facilitate the enforcement of Neoplasticism</strong> into <strong>architecture</strong> and/or any <strong>other artistic</strong> disciplines. As an example, there's the <strong>Schröder House</strong> (1924), which was inspired by Mondrian's neoplastic style and was designated by UNESCO as a World Heritage Site in 2000.</p>`;
 // HTML selectors
 ////////Start Page
 const startPage = document.getElementById('start-page');
