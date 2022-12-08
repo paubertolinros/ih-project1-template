@@ -27,7 +27,6 @@ Minimum user stories:
 
 - User can chose between 2 o more artworks to play.
 - User can get hints.
-- User can see at the moment if he has put the color rigth o wrong.
 - Responsive design (Media Queries).
 
 
